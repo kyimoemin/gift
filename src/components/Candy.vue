@@ -9,6 +9,8 @@
       <Square class="elem" />
       <Star class="elem" />
       <SquareStar class="elem" />
+      <Triangle />
+      <Heart />
     </div>
   </div>
 </template>
@@ -17,6 +19,8 @@ import Sparkle from "../assets/Sparkle";
 import Square from "../assets/Square";
 import SquareStar from "../assets/SquareStar";
 import Star from "../assets/Star";
+import Heart from "../assets/Heart";
+import Triangle from "../assets/Triangle";
 
 export default {
   name: "Candy",
@@ -25,6 +29,8 @@ export default {
     Square,
     Star,
     SquareStar,
+    Heart,
+    Triangle,
   },
 };
 </script>

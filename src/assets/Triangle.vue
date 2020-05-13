@@ -1,28 +1,23 @@
 <template>
-  <svg
-    style="position:absolute;transform:scale(.2);"
-    width="100"
-    height="100"
-    xmlns="http://www.w3.org/2000/svg"
-  >
+  <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
     <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
     <defs>
       <filter id="shadow">
         <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0" />
-        <feGaussianBlur result="blurOut" in="offOut" stdDeviation="4" />
+        <feGaussianBlur result="blurOut" in="offOut" stdDeviation="1" />
         <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
       </filter>
     </defs>
     <g>
       <title>triangle</title>
       <path
-        filter="url(#shadow)"
+        :filter="shadow ? 'url(#shadow)' : ''"
         :stroke="color"
         id="star"
-        d="m13.406643,76.304909l36.593356,-64.038372l36.593356,64.038372l-73.186711,0z"
+        d="m3.037977,15.177017l6.962023,-12.18354l6.962023,12.18354l-13.924046,0z"
         fill-opacity="null"
         stroke-opacity="null"
-        stroke-width="12"
+        stroke-width="1.5"
         fill="transparent"
       />
     </g>
@@ -36,6 +31,10 @@ export default {
     color: {
       type: String,
       default: "red",
+    },
+    shadow: {
+      type: Boolean,
+      default: false,
     },
   },
 };
