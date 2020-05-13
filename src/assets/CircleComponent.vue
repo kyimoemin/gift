@@ -1,18 +1,5 @@
 <template>
-  <div
-    :style="
-      `border:5px;
-      display:inline-block;
-    height:${area}px;
-    width:${area}px;
-    border-radius:50%;
-    border:3px solid ${color};
-    
-  ` + shadow
-        ? `box-shadow: 0px 0px 4px ${color}, inset 0px 0px 4px ${color};`
-        : ''
-    "
-  />
+  <div :style="style" />
 </template>
 
 <script>
@@ -30,6 +17,20 @@ export default {
     shadow: {
       type: Boolean,
       default: false,
+    },
+  },
+  computed: {
+    style() {
+      let style = `border:5px;
+      display:inline-block;
+      height:${this.area}px;
+      width:${this.area}px;
+      border-radius:50%;
+      border:3px solid ${this.color};
+    `;
+      if (this.shadow)
+        style += `box-shadow: 0px 0px 4px ${color}, inset 0px 0px 4px ${color};`;
+      return style;
     },
   },
 };
