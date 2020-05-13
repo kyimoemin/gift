@@ -1,16 +1,42 @@
-<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+<template>
+  <svg
+    style="position:absolute;"
+    width="20"
+    height="20"
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <!--Created with Method Draw - http://github.com/duopixel/Method-Draw/-->
     <defs>
-        <filter id="shadow">
-            <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0"/>
-            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="4"/>
-            <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
-        </filter>
+      <filter id="shadow">
+        <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0" />
+        <feGaussianBlur result="blurOut" in="offOut" stdDeviation="1" />
+        <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+      </filter>
     </defs>
     <g>
-        <title>
-            star
-        </title>
-        <path filter="url(#shadow)" stroke="gold" id="star" d="m12.047477,41.488667l28.993353,0l8.959169,-27.543564l8.959174,27.543564l28.993348,0l-23.456073,17.022664l8.959633,27.543564l-23.456083,-17.023128l-23.456078,17.023128l8.959635,-27.543564l-23.45608,-17.022664z" stroke-width="4" fill="transparent"/>
+      <title>
+        star
+      </title>
+      <path
+        filter="url(#shadow)"
+        :stroke="color"
+        id="star"
+        d="m3.510995,8.544758l4.957194,0l1.531811,-4.709314l1.531812,4.709314l4.957193,0l-4.010447,2.910483l1.53189,4.709314l-4.010449,-2.910562l-4.010448,2.910562l1.531891,-4.709314l-4.010448,-2.910483z"
+        stroke-width="1"
+        fill="transparent"
+      />
     </g>
-</svg>
+  </svg>
+</template>
+
+<script>
+export default {
+  name: "Star",
+  props: {
+    color: {
+      type: String,
+      default: "red",
+    },
+  },
+};
+</script>
