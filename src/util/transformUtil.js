@@ -37,5 +37,5 @@ export function moveAway(
   el.style.opacity = 0;
   el.style.transform = `scale(${scale}) translate(${amount *
     x *
-    slope}px, ${amount * y * slope}px) rotate(${rotateDirection * 90}deg)`; //
+    slope}px, ${amount * y * slope}px) rotate(${rotateDirection * 180}deg)`; //
 }

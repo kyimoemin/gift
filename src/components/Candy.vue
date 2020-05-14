@@ -68,6 +68,21 @@
       <Sparkle style="left:7%;top:-8%;" class="sparkle-1" />
       <Sparkle style="left:40%;top:7%;" class="sparkle-2" />
       <Sparkle style="left:16%;top:43%;" class="sparkle-3" />
+
+      <!-- ripples -->
+      <CircleComponent shadow color="#f79e20" class="ripple r-1" />
+      <CircleComponent shadow color="#f79e20" class="ripple r-2" />
+      <CircleComponent shadow color="#f79e20" class="ripple r-3" />
+      <CircleComponent shadow color="#83b640" class="ripple r-4" />
+      <CircleComponent shadow color="#83b640" class="ripple r-5" />
+      <CircleComponent shadow color="#888" class="ripple r-6" />
+      <CircleComponent shadow color="#ff004e" class="ripple r-7" />
+      <CircleComponent shadow color="#83b640" class="ripple r-8" />
+      <CircleComponent shadow color="#f79e20" class="ripple r-9" />
+      <CircleComponent shadow color="#f79e20" class="ripple r-10" />
+      <CircleComponent shadow color="#83b640" class="ripple r-11" />
+      <CircleComponent shadow color="#f79e20" class="ripple r-12" />
+      <CircleComponent shadow color="#83b640" class="ripple r-13" />
     </div>
   </div>
 </template>
@@ -278,6 +293,83 @@ export default {
   /* animation-iteration-count: infinite; */
 }
 
+.ripple {
+  box-sizing: border-box;
+  position: absolute;
+  transform: scale(0);
+  border-width: 8px !important;
+  animation-name: ripple;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.r-1 {
+  left: 0;
+  top: 27%;
+}
+.r-2 {
+  left: 43%;
+  top: 84%;
+  animation-delay: 0.15s;
+}
+.r-3 {
+  left: 84%;
+  top: 33%;
+  animation-delay: 0.3s;
+}
+.r-4 {
+  left: 78%;
+  bottom: 27%;
+  animation-delay: 0.45s;
+}
+
+.r-5 {
+  left: 13%;
+  bottom: 20%;
+  animation-delay: 0.6s;
+}
+
+.r-6 {
+  left: 3%;
+  bottom: 33%;
+  animation-delay: 0.75s;
+}
+.r-7 {
+  right: 36%;
+  bottom: 19%;
+  animation-delay: 0.9s;
+}
+.r-8 {
+  left: 0;
+  top: 16%;
+  animation-delay: 1.5s;
+}
+.r-9 {
+  left: 22%;
+  top: 29%;
+  animation-delay: 1.2s;
+}
+.r-10 {
+  right: 20%;
+  top: 17%;
+  animation-delay: 1.35s;
+}
+.r-11 {
+  left: 17%;
+  bottom: 14%;
+  animation-delay: 1.5s;
+}
+.r-12 {
+  right: 3%;
+  bottom: 41%;
+  animation-delay: 1.65s;
+}
+.r-13 {
+  right: 4%;
+  bottom: 22%;
+  animation-delay: 1.8s;
+}
+
 @keyframes sparkle {
   0% {
     transform: scale(0) rotate(0deg);
@@ -314,6 +406,22 @@ export default {
   }
   100% {
     transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    border-width: 4px;
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.5);
+    border-width: 0px;
     opacity: 0;
   }
 }

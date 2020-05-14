@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <Candy />
+  <div @click="showTheCandy" id="app">
+    <Candy v-if="showCandy" />
   </div>
 </template>
 
@@ -11,6 +11,20 @@ export default {
   name: "App",
   components: {
     Candy,
+  },
+  data() {
+    return {
+      showCandy: false,
+    };
+  },
+  methods: {
+    showTheCandy() {
+      if (this.showCandy) return;
+      this.showCandy = true;
+      setTimeout(() => {
+        this.showCandy = false;
+      }, 3000);
+    },
   },
 };
 </script>
