@@ -1,18 +1,73 @@
 <template>
   <div class="main-view">
-    <div ref="wrapper" class="relative b-1-w ">
+    <div ref="wrapper" class="relative  ">
+      <!-- first transform -->
+      <SquareStar
+        ref="firstSqStar1"
+        color="#83b640"
+        class="elem square-star-1"
+      />
+      <Square ref="firstSquare1" color="#83b640" class="elem square-1" />
+      <Star ref="firstStar1" color="#ff004e" class="elem star-1" />
+      <Triangle ref="firstTriangle1" color="#f79e20" class="elem triangle-1" />
+      <SquareStar
+        ref="firstSqStar2"
+        color="#8d2fd5"
+        class="elem square-star-2"
+      />
+      <CircleComponent
+        ref="firstCircle1"
+        color="#ff004e"
+        class="elem circle-1"
+      />
+
+      <!-- second transform -->
+      <Star ref="secondStar" color="#ff004e" shadow class="elem second-star" />
+      <Heart
+        ref="secondHeart"
+        color="#61c7ca"
+        shadow
+        class="elem second-heart"
+      />
+      <CircleComponent
+        color="#ff004e"
+        ref="secondCircle"
+        shadow
+        class="elem second-circle"
+      />
+      <!-- third transform -->
+      <SquareStar
+        ref="thirdSqStar1"
+        color="#83b640"
+        shadow
+        class="elem third-sq-star-1"
+      />
+      <Heart ref="thirdHeart" color="#ff004e" shadow class="elem third-heart" />
+      <SquareStar
+        ref="thirdSqStar2"
+        color="#8d2fd5"
+        shadow
+        class="elem third-sq-star-2"
+      />
+      <!-- fourth tranform -->
+      <Square
+        ref="fourthSquare"
+        color="#83b640"
+        shadow
+        class="elem fourth-square"
+      />
+      <Triangle
+        ref="fourthTriangle"
+        color="#f79e20"
+        shadow
+        class="elem fourth-triangle"
+      />
+
+      <!-- <div class="center" /> -->
       <img class="candy" src="../assets/candy.png" />
       <Sparkle style="left:7%;top:-8%;" class="sparkle-1" />
       <Sparkle style="left:40%;top:7%;" class="sparkle-2" />
       <Sparkle style="left:16%;top:43%;" class="sparkle-3" />
-
-      <SquareStar ref="sqStar1" color="#83b640" class="elem square-star-1" />
-      <Square ref="square1" color="#83b640" class="elem square-1" />
-      <Star ref="star1" color="#ff004e" class="elem star-1" />
-      <Triangle ref="triangle1" color="#f79e20" class="elem triangle-1" />
-      <SquareStar ref="sqStar2" color="#8d2fd5" class="elem square-star-2" />
-      <CircleComponent ref="circle1" color="#ff004e" class="elem circle-1" />
-      <div class="center" />
     </div>
   </div>
 </template>
@@ -21,10 +76,10 @@ import Sparkle from "../assets/Sparkle";
 import Square from "../assets/Square";
 import SquareStar from "../assets/SquareStar";
 import Star from "../assets/Star";
-// import Heart from "../assets/Heart";
+import Heart from "../assets/Heart";
 import Triangle from "../assets/Triangle";
 import CircleComponent from "../assets/CircleComponent";
-import { runAsync, moveAway } from "../util";
+import { moveAway } from "../util";
 
 export default {
   name: "Candy",
@@ -34,27 +89,48 @@ export default {
     Star,
     SquareStar,
     Triangle,
+    Heart,
     CircleComponent,
   },
   mounted() {
-    runAsync(this.doTransform);
+    setTimeout(this.firstTransform, 0);
+    setTimeout(this.secondTransform, 150);
+    setTimeout(this.thirdTransform, 500);
+    setTimeout(this.fourthTransform, 750);
   },
   methods: {
-    doTransform() {
+    firstTransform() {
       const {
-        sqStar1,
-        square1,
-        star1,
-        triangle1,
-        sqStar2,
-        circle1,
+        firstSqStar1,
+        firstSquare1,
+        firstStar1,
+        firstTriangle1,
+        firstSqStar2,
+        firstCircle1,
       } = this.$refs;
-      moveAway(sqStar1.$el, 0.7, 4);
-      moveAway(square1.$el, 0.7, 6);
-      moveAway(star1.$el, 1.2, 6);
-      moveAway(triangle1.$el, 0.7, 7);
-      moveAway(sqStar2.$el, 0.7, 12, true, true);
-      moveAway(circle1.$el, 0.7, 4, true, true);
+      moveAway(firstSqStar1.$el, 0.7, 4);
+      moveAway(firstSquare1.$el, 0.7, 6);
+      moveAway(firstStar1.$el, 1.2, 6);
+      moveAway(firstTriangle1.$el, 0.7, 7);
+      moveAway(firstSqStar2.$el, 0.7, 12, true, true);
+      moveAway(firstCircle1.$el, 0.7, 4, true, true);
+    },
+    secondTransform() {
+      const { secondStar, secondHeart, secondCircle } = this.$refs;
+      moveAway(secondStar.$el, 1.2, 2);
+      moveAway(secondHeart.$el, 1.2, 0.6, true, true, -1);
+      moveAway(secondCircle.$el, 1.2, 3, true, true);
+    },
+    thirdTransform() {
+      const { thirdSqStar1, thirdHeart, thirdSqStar2 } = this.$refs;
+      moveAway(thirdSqStar1.$el, 1.2, 4);
+      moveAway(thirdHeart.$el, 1.2, 1);
+      moveAway(thirdSqStar2.$el, 1.2, 0.6, true, true);
+    },
+    fourthTransform() {
+      const { fourthSquare, fourthTriangle } = this.$refs;
+      moveAway(fourthSquare.$el, 1.2, 2.5);
+      moveAway(fourthTriangle.$el, 1.2, 2.5);
     },
   },
 };
@@ -74,7 +150,7 @@ export default {
 .candy {
   height: 200px;
   animation-name: zoom-in;
-  animation-duration: 2s;
+  animation-duration: 2.5s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   /* animation-iteration-count: infinite; */
@@ -91,45 +167,92 @@ export default {
 
 .elem {
   position: absolute;
-  /* transform: scale(0.1); */
-  z-index: 3;
-  transition: transform 3s, opacity 1s 0.5s;
+  transform: scale(0.1);
+  /* z-index: 3; */
+  transition: transform 2.5s, opacity 0.3s 1.5s;
+}
+
+.fourth-square {
+  left: 55%;
+  top: 35%;
+  border-width: 2.5px;
+}
+
+.fourth-triangle {
+  left: 70%;
+  top: 38%;
+}
+.fourth-triangle path {
+  stroke-width: 2.3px;
+}
+
+.third-sq-star-1 {
+  left: 35%;
+  top: 55%;
+}
+
+.third-heart {
+  left: 40%;
+  top: 65%;
+}
+
+.third-sq-star-2 {
+  left: 53%;
+  top: 65%;
+}
+
+.second-star {
+  left: 55%;
+  top: 39%;
+  /* transform: scale(1.2); */
+}
+
+.second-heart {
+  left: 48%;
+  top: 36%;
+  /* transform: scale(1.2); */
+}
+
+.second-circle {
+  left: 35%;
+  top: 35%;
+  /* transform: scale(1.2); */
 }
 
 .square-1 {
   left: 68%;
   top: 37%;
-  transform: scale(0.7);
+  /* transform: scale(0.7); */
 }
 
 .star-1 {
   left: 78%;
   top: 44%;
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
 }
 
 .triangle-1 {
   left: 73%;
   top: 44%;
-  transform: scale(0.7);
+  /* transform: scale(0.7); */
 }
 
 .square-star-1 {
   left: 65%;
   top: 40%;
-  transform: scale(0.7);
+  /* transform: scale(0.7); */
 }
 
 .square-star-2 {
   left: 76%;
   top: 55%;
-  transform: scale(0.7);
+  /* transform: scale(0.7); */
 }
 
 .circle-1 {
   left: 68%;
   top: 60%;
-  transform: scale(0.7);
+  /* transform: scale(0.7); */
 }
 
 .sparkle-1 {
@@ -148,6 +271,7 @@ export default {
 .sparkle-2,
 .sparkle-3 {
   transform: scale(0);
+  opacity: 0;
   animation-name: sparkle;
   animation-duration: 1s;
   animation-fill-mode: forwards;
