@@ -21,11 +21,11 @@ export default {
   },
   computed: {
     style() {
-      let style = `border:1.5px;
+      let style = `
       display:inline-block;
       height:${this.area}px;
       width:${this.area}px;
-      border:3px solid ${this.color};
+      border:1.5px solid ${this.color};
       `;
       if (this.shadow)
         style += `box-shadow: 0px 0px 4px ${this.color}, inset 0px 0px 4px ${this.color};`;

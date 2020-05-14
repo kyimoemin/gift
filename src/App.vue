@@ -33,4 +33,8 @@ body {
 svg {
   position: absolute;
 }
+
+.b-1-w {
+  border: 1px solid white;
+}
 </style>

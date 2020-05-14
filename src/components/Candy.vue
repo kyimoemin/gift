@@ -1,14 +1,18 @@
 <template>
   <div class="main-view">
-    <div class="relative">
+    <div ref="wrapper" class="relative b-1-w ">
       <img class="candy" src="../assets/candy.png" />
       <Sparkle style="left:7%;top:-8%;" class="sparkle-1" />
       <Sparkle style="left:40%;top:7%;" class="sparkle-2" />
       <Sparkle style="left:16%;top:43%;" class="sparkle-3" />
 
-      <Square class="elem" />
-      <Star class="elem" />
-      <SquareStar class="elem" />
+      <SquareStar ref="sqStar1" color="#83b640" class="elem square-star-1" />
+      <Square ref="square1" color="#83b640" class="elem square-1" />
+      <Star ref="star1" color="#ff004e" class="elem star-1" />
+      <Triangle ref="triangle1" color="#f79e20" class="elem triangle-1" />
+      <SquareStar ref="sqStar2" color="#8d2fd5" class="elem square-star-2" />
+      <CircleComponent ref="circle1" color="#ff004e" class="elem circle-1" />
+      <div class="center" />
     </div>
   </div>
 </template>
@@ -18,7 +22,9 @@ import Square from "../assets/Square";
 import SquareStar from "../assets/SquareStar";
 import Star from "../assets/Star";
 // import Heart from "../assets/Heart";
-// import Triangle from "../assets/Triangle";
+import Triangle from "../assets/Triangle";
+import CircleComponent from "../assets/CircleComponent";
+import { runAsync, moveAway } from "../util";
 
 export default {
   name: "Candy",
@@ -27,6 +33,29 @@ export default {
     Square,
     Star,
     SquareStar,
+    Triangle,
+    CircleComponent,
+  },
+  mounted() {
+    runAsync(this.doTransform);
+  },
+  methods: {
+    doTransform() {
+      const {
+        sqStar1,
+        square1,
+        star1,
+        triangle1,
+        sqStar2,
+        circle1,
+      } = this.$refs;
+      moveAway(sqStar1.$el, 0.7, 4);
+      moveAway(square1.$el, 0.7, 6);
+      moveAway(star1.$el, 1.2, 6);
+      moveAway(triangle1.$el, 0.7, 7);
+      moveAway(sqStar2.$el, 0.7, 12, true, true);
+      moveAway(circle1.$el, 0.7, 4, true, true);
+    },
   },
 };
 </script>
@@ -51,9 +80,56 @@ export default {
   /* animation-iteration-count: infinite; */
 }
 
-.elem {
-  left: 0;
+.center {
   position: absolute;
+  width: 2px;
+  height: 2px;
+  background: red;
+  left: 50%;
+  top: 50%;
+}
+
+.elem {
+  position: absolute;
+  /* transform: scale(0.1); */
+  z-index: 3;
+  transition: transform 3s, opacity 1s 0.5s;
+}
+
+.square-1 {
+  left: 68%;
+  top: 37%;
+  transform: scale(0.7);
+}
+
+.star-1 {
+  left: 78%;
+  top: 44%;
+  transform: scale(1.2);
+}
+
+.triangle-1 {
+  left: 73%;
+  top: 44%;
+  transform: scale(0.7);
+}
+
+.square-star-1 {
+  left: 65%;
+  top: 40%;
+  transform: scale(0.7);
+}
+
+.square-star-2 {
+  left: 76%;
+  top: 55%;
+  transform: scale(0.7);
+}
+
+.circle-1 {
+  left: 68%;
+  top: 60%;
+  transform: scale(0.7);
 }
 
 .sparkle-1 {
