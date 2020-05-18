@@ -57,6 +57,7 @@ img {
   animation-fill-mode: forwards;
   animation-direction: alternate;
   animation-iteration-count: 2;
+  -webkit-box-reflect: below 0 linear-gradient(#0000 50%, #0004, #0008);
 }
 
 @keyframes spark {
