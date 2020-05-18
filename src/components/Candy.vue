@@ -64,7 +64,10 @@
       />
 
       <!-- <div class="center" /> -->
-      <img class="candy" src="../assets/candy.png" />
+      <img
+        class="candy"
+        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/0_candy_4.png"
+      />
       <Sparkle style="left:7%;top:-8%;" class="sparkle-1" />
       <Sparkle style="left:40%;top:7%;" class="sparkle-2" />
       <Sparkle style="left:16%;top:43%;" class="sparkle-3" />

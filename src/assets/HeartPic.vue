@@ -1,7 +1,9 @@
 <template>
   <div class="absolute">
     <div class="heart">
-      <img src="./heart.png" />
+      <img
+        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/4_heart_0.png"
+      />
       <Sparkle v-if="spark" class="left" />
       <Sparkle v-if="spark" class="right" />
     </div>
