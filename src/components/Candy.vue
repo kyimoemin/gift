@@ -90,6 +90,8 @@
   </div>
 </template>
 <script>
+//time out is 2.5
+
 import Sparkle from "../assets/Sparkle";
 import Square from "../assets/Square";
 import SquareStar from "../assets/SquareStar";
@@ -391,18 +393,22 @@ export default {
   0% {
     transform: scale(0);
     opacity: 0;
+    animation-timing-function: ease-in-out;
   }
   25% {
     transform: scale(1.1);
     opacity: 1;
+    animation-timing-function: ease-in-out;
   }
   45% {
     transform: scale(1);
     opacity: 1;
+    animation-timing-function: ease-in-out;
   }
   65% {
     transform: scale(1.1);
     opacity: 1;
+    animation-timing-function: ease-in-out;
   }
   90% {
     opacity: 1;
@@ -410,6 +416,7 @@ export default {
   100% {
     transform: scale(1);
     opacity: 0;
+    animation-timing-function: ease-in-out;
   }
 }
 

@@ -23,6 +23,8 @@
 </template>
 
 <script>
+// time out is 6800
+
 import HeartPic from "../assets/HeartPic";
 
 export default {

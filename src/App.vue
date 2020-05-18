@@ -1,19 +1,22 @@
 <template>
   <div @click="showAnimmation" id="app">
-    <Hearts v-if="show" />
+    <!-- <Hearts v-if="show" /> -->
     <!-- <Candy v-if="show" /> -->
+    <Diamond v-if="show" />
   </div>
 </template>
 
 <script>
 // import Candy from "./components/Candy";
-import Hearts from "./components/Hearts";
+// import Hearts from "./components/Hearts";
+import Diamond from "./components/Diamond";
 
 export default {
   name: "App",
   components: {
     // Candy,
-    Hearts,
+    // Hearts,
+    Diamond,
   },
   data() {
     return {
@@ -64,5 +67,15 @@ svg {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
 }
 </style>
