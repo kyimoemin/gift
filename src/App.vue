@@ -1,29 +1,31 @@
 <template>
-  <div @click="showTheCandy" id="app">
-    <Candy v-if="showCandy" />
+  <div @click="showAnimmation" id="app">
+    <Hearts v-if="show" />
   </div>
 </template>
 
 <script>
-import Candy from "./components/Candy";
+// import Candy from "./components/Candy";
+import Hearts from "./components/Hearts";
 
 export default {
   name: "App",
   components: {
-    Candy,
+    // Candy,
+    Hearts,
   },
   data() {
     return {
-      showCandy: false,
+      show: false,
     };
   },
   methods: {
-    showTheCandy() {
-      if (this.showCandy) return;
-      this.showCandy = true;
+    showAnimmation() {
+      if (this.show) return;
+      this.show = true;
       setTimeout(() => {
-        this.showCandy = false;
-      }, 3000);
+        this.show = false;
+      }, 6800);
     },
   },
 };
@@ -44,11 +46,22 @@ body {
 .relative {
   position: relative;
 }
+.absolute {
+  position: absolute;
+}
 svg {
   position: absolute;
 }
 
 .b-1-w {
   border: 1px solid white;
+}
+.animation-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 </style>
