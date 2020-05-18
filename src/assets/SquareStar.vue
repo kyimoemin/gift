@@ -14,7 +14,7 @@
           star
         </title>
         <path
-          :filter="shadow ? 'url(#shadow)' : ''"
+          :filter="shadow ? `url(${$route.path}#shadow)` : ''"
           :stroke="color"
           id="square-star"
           d="M2 2 L10 4 L18 2 L16 10 L18 18 L10 16 L2 18 L4 10 z"

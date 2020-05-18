@@ -24,7 +24,7 @@
       </title>
 
       <path
-        filter="url(#shadow1)"
+        :filter="`url(${$route.path}#shadow1)`"
         stroke="#fffa"
         id="square-star"
         d="M40,40 L60,40 L60,60 L40,60 z"
@@ -34,7 +34,7 @@
         fill="#fffa"
       />
       <path
-        filter="url(#shadow1)"
+        :filter="`url(${$route.path}#shadow1)`"
         stroke="#fffa"
         id="square-star"
         d="M40,40 L60,40 L60,60 L40,60 z"
@@ -45,7 +45,7 @@
         fill="#fffa"
       />
       <path
-        filter="url(#shadow)"
+        :filter="`url(${$route.path}#shadow)`"
         stroke="white"
         id="square-star"
         d="M0 0 L50 47.5 L100 0 L52.5 50 L100 100 L50 52.5 L0 100 L47.5 50 z"
@@ -55,7 +55,7 @@
         fill="white"
       />
       <path
-        filter="url(#shadow)"
+        :filter="`url(${$route.path}#shadow)`"
         stroke="white"
         id="square-star"
         d="M30 30 L50 47.5 L70 30 L52.5 50 L70 70 L50 52.5 L30 70 L47.5 50 z"

@@ -14,7 +14,7 @@
           heart
         </title>
         <path
-          :filter="shadow ? 'url(#shadow)' : ''"
+          :filter="shadow ? `url(${$route.path}#shadow)` : ''"
           :stroke="color"
           id="heart"
           stroke-width="1.5"

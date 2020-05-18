@@ -12,7 +12,7 @@
       <g>
         <title>triangle</title>
         <path
-          :filter="shadow ? 'url(#shadow)' : ''"
+          :filter="shadow ? `url(${$route.path}#shadow)` : ''"
           :stroke="color"
           id="star"
           d="m3.037977,15.177017l6.962023,-12.18354l6.962023,12.18354l-13.924046,0z"

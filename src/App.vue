@@ -1,18 +1,19 @@
 <template>
   <div @click="showAnimmation" id="app">
-    <Hearts v-if="show" />
+    <!-- <Hearts v-if="show" /> -->
+    <Candy v-if="show" />
   </div>
 </template>
 
 <script>
-// import Candy from "./components/Candy";
-import Hearts from "./components/Hearts";
+import Candy from "./components/Candy";
+// import Hearts from "./components/Hearts";
 
 export default {
   name: "App",
   components: {
-    // Candy,
-    Hearts,
+    Candy,
+    // Hearts,
   },
   data() {
     return {
