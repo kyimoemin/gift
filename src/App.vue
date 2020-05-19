@@ -28,8 +28,8 @@ export default {
       if (this.show) return;
       this.show = true;
       setTimeout(() => {
-        this.show = false;
-      }, 6800);
+        // this.show = false;
+      }, 4000);
     },
   },
 };
