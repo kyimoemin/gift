@@ -30,11 +30,11 @@ export default {
 
 <style scoped>
 div {
-  opacity: 0.4;
+  opacity: 0.2;
 }
 div.on {
   animation-name: light-on;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-direction: alternate;
   animation-iteration-count: 2;
@@ -43,7 +43,7 @@ div.on {
 @keyframes light-on {
   0% {
     background-color: #fce978;
-    opacity: 0.4;
+    opacity: 0.2;
   }
   100% {
     background-color: white;

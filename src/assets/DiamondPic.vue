@@ -12,6 +12,7 @@
 </template>
 
 <script>
+// duration is 4 s
 import Sparkle from "./Sparkle";
 
 export default {

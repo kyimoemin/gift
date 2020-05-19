@@ -1,11 +1,15 @@
 <template>
   <div class="animation-wrapper flex justify-center align-center">
-    <LightGrid :lightSize="20" :gap="2" />
+    <div>
+      <LightGrid :lightSize="20" :gap="2" />
+      <LightGrid :lightSize="10" :gap="1" />
+    </div>
     <DiamondPic />
   </div>
 </template>
 
 <script>
+// duration is 4s
 import DiamondPic from "../assets/DiamondPic";
 import LightGrid from "../assets/LightGrid";
 
@@ -17,3 +21,24 @@ export default {
   },
 };
 </script>
+<style scoped>
+.animation-wrapper {
+  animation-name: fade-in;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+</style>

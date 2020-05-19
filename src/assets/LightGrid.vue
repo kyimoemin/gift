@@ -45,6 +45,7 @@ export default {
     };
   },
   mounted() {
+    this.randomLightOn();
     this.intervalId = setInterval(this.randomLightOn, MAX_TIMEOUT);
   },
   beforeDestroy() {
