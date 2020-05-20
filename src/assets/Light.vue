@@ -31,7 +31,6 @@ export default {
 <style scoped>
 div {
   opacity: 0;
-  border: none;
 }
 div.on {
   animation-name: light-on;
@@ -57,7 +56,6 @@ div.on {
   }
   80% {
     background-color: #f5da41;
-    /* opacity: 0.7; */
     opacity: 0.5;
     transform: scale(1);
     animation-timing-function: cubic-bezier(0, 0.65, 1, 0.37);
