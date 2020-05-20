@@ -4,6 +4,7 @@
       <LightGrid :lightSize="20" :gap="2" />
       <LightGrid :lightSize="10" :gap="1" />
     </div>
+    <LightGrid style="position:absolute;" :lightSize="35" :gap="4" />
     <DiamondPic />
   </div>
 </template>
@@ -26,6 +27,7 @@ export default {
   animation-name: fade-in;
   animation-duration: 4s;
   animation-fill-mode: forwards;
+  background: linear-gradient(transparent, #f5da4122, transparent);
 }
 @keyframes fade-in {
   0% {

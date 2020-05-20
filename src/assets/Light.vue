@@ -21,7 +21,7 @@ export default {
         border-radius:50%;
         background-color:#fce978;
         box-shadow: 0px 0px ${this.size / 10}px ${this.size / 10}px #fce978;
-        filter:blur(${this.size / 20}px);
+        filter:blur(${this.size / 10}px);
       `;
     },
   },
@@ -30,25 +30,42 @@ export default {
 
 <style scoped>
 div {
-  opacity: 0.2;
+  opacity: 0;
+  border: none;
 }
 div.on {
   animation-name: light-on;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-direction: alternate;
-  animation-iteration-count: 2;
 }
 
 @keyframes light-on {
   0% {
-    background-color: #fce978;
-    opacity: 0.2;
+    background-color: #f5da41;
+    opacity: 0;
+    transform: scale(1);
+  }
+  20% {
+    background-color: #fff;
+    opacity: 1;
+    transform: scale(1.1);
+    filter: blur(0.5px);
+  }
+  60% {
+    opacity: 0.8;
+  }
+  80% {
+    background-color: #f5da41;
+    /* opacity: 0.7; */
+    opacity: 0.5;
+    transform: scale(1);
+    animation-timing-function: cubic-bezier(0, 0.65, 1, 0.37);
   }
   100% {
-    background-color: white;
-    opacity: 1;
-    animation-timing-function: cubic-bezier(0, 1.39, 0.17, 0.92);
+    background-color: #f5da41;
+    opacity: 0.1;
+    transform: scale(1);
   }
 }
 </style>
