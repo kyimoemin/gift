@@ -21,7 +21,7 @@
 import Light from "./Light";
 import { getRandom } from "../util";
 
-const MAX_TIMEOUT = 1000; //it should be same as light-on duration of Light component
+const MAX_TIMEOUT = 500; //it should be same as light-on duration of Light component
 
 export default {
   name: "LightGrid",

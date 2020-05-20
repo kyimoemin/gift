@@ -27,7 +27,7 @@ export default {
   animation-name: fade-in;
   animation-duration: 4s;
   animation-fill-mode: forwards;
-  background: linear-gradient(transparent, #f5da4122, transparent);
+  background: linear-gradient(transparent, #f5da4144, transparent);
 }
 @keyframes fade-in {
   0% {

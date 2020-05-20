@@ -34,7 +34,7 @@ div {
 }
 div.on {
   animation-name: light-on;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
   animation-direction: alternate;
 }
