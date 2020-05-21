@@ -1,0 +1,25 @@
+<svg  width="50" height="10" xmlns="http://www.w3.org/2000/svg">
+      <!--Created with Method Draw - http://github.com/duopixel/Method-Draw/-->
+     
+      <defs>
+        <linearGradient id="whiteGradient">
+          <stop offset="0%" stop-color="#fff0"/>
+          <stop offset="35%" stop-color="#fff" />
+          <stop offset="50%" stop-color="#fff0"/>
+          <stop offset="75%" stop-color="#fff" />
+          <stop offset="100%" stop-color="#fff0"/>
+        </linearGradient>
+      </defs>
+      <g >
+        <title>
+          wave
+        </title>
+        <path
+          id="heart"
+          stroke-width="0"
+          d="m 3 4 c 16 2 19 2 21 1 c 15 2 10 2 24 0 c -14 3 -9 3 -24 0 c -3 2 -3 2 -21 -1 z"
+          fill="url(#whiteGradient)"
+        />
+      </g>
+    </svg>
+
