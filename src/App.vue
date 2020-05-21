@@ -2,21 +2,24 @@
   <div @click="showAnimmation" id="app">
     <!-- <Hearts v-if="show" /> -->
     <!-- <Candy v-if="show" /> -->
-    <Diamond v-if="show" />
+    <!-- <Diamond v-if="show" /> -->
+    <Beach />
   </div>
 </template>
 
 <script>
 // import Candy from "./components/Candy";
 // import Hearts from "./components/Hearts";
-import Diamond from "./components/Diamond";
+// import Diamond from "./components/Diamond";/
+import Beach from "./components/Beach";
 
 export default {
   name: "App",
   components: {
     // Candy,
     // Hearts,
-    Diamond,
+    // Diamond,
+    Beach,
   },
   data() {
     return {
@@ -77,5 +80,12 @@ svg {
 }
 .align-center {
   align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 </style>
