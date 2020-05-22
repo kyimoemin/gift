@@ -64,6 +64,7 @@
 </template>
 
 <style scoped>
+/* duration is 4s */
 .animation-wrapper {
   background-image: radial-gradient(
     circle,
@@ -72,6 +73,9 @@
     #4fb8f3 50%,
     transparent
   );
+  animation-name: fade-in;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
 }
 .animation-wrapper > img {
   position: absolute;
@@ -336,6 +340,18 @@
   100% {
     transform: rotate(0deg) scale(1);
     animation-timing-function: ease-in;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+    animation-timing-function: cubic-bezier(1, 0, 1, -0.12);
+  }
+  100% {
+    opacity: 0;
   }
 }
 </style>

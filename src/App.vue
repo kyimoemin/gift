@@ -3,7 +3,7 @@
     <!-- <Hearts v-if="show" /> -->
     <!-- <Candy v-if="show" /> -->
     <!-- <Diamond v-if="show" /> -->
-    <Beach />
+    <Beach v-if="show" />
   </div>
 </template>
 
