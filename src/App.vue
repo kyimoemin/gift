@@ -3,7 +3,8 @@
     <!-- <Hearts v-if="show" /> -->
     <!-- <Candy v-if="show" /> -->
     <!-- <Diamond v-if="show" /> -->
-    <Beach v-if="show" />
+    <!-- <Beach v-if="show" /> -->
+    <Kiss v-if="show" />
   </div>
 </template>
 
@@ -11,7 +12,8 @@
 // import Candy from "./components/Candy";
 // import Hearts from "./components/Hearts";
 // import Diamond from "./components/Diamond";/
-import Beach from "./components/Beach";
+// import Beach from "./components/Beach";
+import Kiss from "./components/Kiss";
 
 export default {
   name: "App",
@@ -19,7 +21,8 @@ export default {
     // Candy,
     // Hearts,
     // Diamond,
-    Beach,
+    // Beach,
+    Kiss,
   },
   data() {
     return {
@@ -32,7 +35,7 @@ export default {
       this.show = true;
       setTimeout(() => {
         this.show = false;
-      }, 4000);
+      }, 3000);
     },
   },
 };
