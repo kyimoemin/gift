@@ -4,7 +4,9 @@
     <!-- <Candy v-if="show" /> -->
     <!-- <Diamond v-if="show" /> -->
     <!-- <Beach v-if="show" /> -->
-    <Kiss v-if="show" />
+    <!-- <Kiss v-if="show" /> -->
+    <!-- <Flower /> -->
+    <Car v-if="show" />
   </div>
 </template>
 
@@ -13,7 +15,9 @@
 // import Hearts from "./components/Hearts";
 // import Diamond from "./components/Diamond";/
 // import Beach from "./components/Beach";
-import Kiss from "./components/Kiss";
+// import Kiss from "./components/Kiss";
+// import Flower from "./components/Flower";
+import Car from "./components/Car";
 
 export default {
   name: "App",
@@ -22,7 +26,9 @@ export default {
     // Hearts,
     // Diamond,
     // Beach,
-    Kiss,
+    // Kiss,
+    // Flower,
+    Car,
   },
   data() {
     return {
@@ -35,7 +41,7 @@ export default {
       this.show = true;
       setTimeout(() => {
         this.show = false;
-      }, 3000);
+      }, 2000);
     },
   },
 };
