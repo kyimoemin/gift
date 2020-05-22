@@ -56,6 +56,10 @@
       class="shell"
       src="https://res-global.1315cdn.com:11443/statics/live/common/gift/7_bikini_41.png"
     />
+    <img
+      class="bikini"
+      src="https://res-global.1315cdn.com:11443/statics/live/common/gift/7_bikini_50.png"
+    />
   </div>
 </template>
 
@@ -96,7 +100,10 @@
 .umbrella {
   width: 24vw;
   right: 15vw;
+  transform: scale(0);
   animation-name: umbrella;
+  animation-delay: 0.2s;
+  transform-origin: left bottom;
 }
 .livetube {
   width: 14vw;
@@ -107,9 +114,6 @@
 }
 .sun {
   width: 30vw;
-  animation-name: sun;
-  animation-duration: 1s !important;
-  animation-timing-function: cubic-bezier(0.42, 1.7, 0.64, 0.75);
 }
 .summer {
   width: 69vw;
@@ -128,32 +132,55 @@
   width: 11vw;
   right: 11vw;
   bottom: 36vh;
-  animation-name: watermelon;
 }
 .drink {
   width: 7vw;
   right: 6vw;
   bottom: 37vh;
+  transform: scale(0);
+  animation-delay: 0.2s;
 }
 .ballon {
   width: 15vw;
   left: 10vw;
   top: 37vh;
+  animation-name: ballon;
+  animation-timing-function: linear;
 }
 .rock {
   left: 14vw;
   width: 7vw;
   bottom: 36vh;
+  animation-delay: 0.3s;
 }
 .starfish {
   left: 8vw;
   width: 13vw;
   bottom: 36vh;
+  animation-delay: 0.1s;
 }
 .shell {
   left: 9vw;
   width: 5vw;
   bottom: 36vh;
+  animation-delay: 0.2s;
+}
+.sun,
+.watermelon,
+.drink,
+.rock,
+.starfish,
+.shell {
+  transform: scale(0);
+  transform-origin: center bottom;
+  animation-name: drink;
+  animation-duration: 1.5s !important;
+}
+
+.bikini {
+  width: 50vmin;
+  animation-name: bikini;
+  animation-duration: 1.2s !important;
 }
 
 @keyframes cloud {
@@ -174,14 +201,14 @@
 }
 @keyframes umbrella {
   0% {
-    transform: translate(-10px, 14px) scale(0.5);
+    transform: scale(0.5);
   }
   16% {
-    transform: translate(0, 0) scale(1.075);
+    transform: scale(1.075);
     animation-timing-function: ease-in-out;
   }
   32% {
-    transform: translate(-5px, 7px) scale(1);
+    transform: scale(1);
     animation-timing-function: ease-in-out;
   }
   48% {
@@ -189,7 +216,7 @@
     animation-timing-function: ease-in-out;
   }
   64% {
-    transform: translate(-2.5px, 3.5px) scale(1);
+    transform: scale(1);
     animation-timing-function: ease-in-out;
   }
   80% {
@@ -197,11 +224,11 @@
     animation-timing-function: ease-in-out;
   }
   96% {
-    transform: translate(0, 0) scale(1);
+    transform: scale(1);
     animation-timing-function: ease-in-out;
   }
   100% {
-    transform: translate(0, 0) scale(1);
+    transform: scale(1);
     animation-timing-function: ease-in-out;
   }
 }
@@ -245,8 +272,70 @@
     opacity: 0;
   }
 }
-@keyframes watermelon {
+@keyframes drink {
   0% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1.05);
+    animation-timing-function: ease-in-out;
+  }
+  60% {
+    transform: scale(1);
+    animation-timing-function: ease-in-out;
+  }
+  80% {
+    transform: scale(1.02);
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: scale(1);
+    animation-timing-function: ease-in-out;
+  }
+}
+@keyframes ballon {
+  0% {
+    transform: translate(10px, 20px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-40px, -80px);
+    opacity: 0;
+  }
+}
+@keyframes bikini {
+  0% {
+    transform: rotate(90deg) scale(0);
+  }
+  30% {
+    transform: rotate(-5deg) scale(1.05);
+    animation-timing-function: ease-out;
+  }
+  45% {
+    transform: rotate(4deg) scale(0.96);
+    animation-timing-function: cubic-bezier(0.58, 0, 0.43, 1);
+  }
+  60% {
+    transform: rotate(-4deg) scale(1.04);
+    animation-timing-function: cubic-bezier(0.58, 0, 0.43, 1);
+  }
+  75% {
+    transform: rotate(3deg) scale(0.97);
+    animation-timing-function: cubic-bezier(0.58, 0, 0.43, 1);
+  }
+  90% {
+    transform: rotate(-3deg) scale(1.03);
+    animation-timing-function: cubic-bezier(0.58, 0, 0.43, 1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+    animation-timing-function: ease-in;
   }
 }
 </style>
