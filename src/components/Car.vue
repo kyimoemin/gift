@@ -35,8 +35,8 @@
   height: 17px;
   transform: rotate(27deg) translate(-79px, 18px) rotateY(-12deg);
   border-radius: 50% 0 0 50%;
-  background: radial-gradient(white, #8686fd, #ff4700, #ff4700);
-  box-shadow: -44px 0px 9px 0 red;
+  background: radial-gradient(white, #8686fd, #ffd900, #ff9900);
+  box-shadow: -44px 0px 9px 0 #ff6600;
   filter: blur(2px);
   opacity: 0.9;
   z-index: -1;

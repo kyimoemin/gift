@@ -6,7 +6,7 @@
     <!-- <Beach v-if="show" /> -->
     <!-- <Kiss v-if="show" /> -->
     <!-- <Flower /> -->
-    <Car v-if="show" />
+    <Star />
   </div>
 </template>
 
@@ -17,7 +17,8 @@
 // import Beach from "./components/Beach";
 // import Kiss from "./components/Kiss";
 // import Flower from "./components/Flower";
-import Car from "./components/Car";
+// import Car from "./components/Car";
+import Star from "./components/Star";
 
 export default {
   name: "App",
@@ -28,7 +29,8 @@ export default {
     // Beach,
     // Kiss,
     // Flower,
-    Car,
+    // Car,
+    Star,
   },
   data() {
     return {
@@ -40,7 +42,7 @@ export default {
       if (this.show) return;
       this.show = true;
       setTimeout(() => {
-        this.show = false;
+        // this.show = false;
       }, 2000);
     },
   },
