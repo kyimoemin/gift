@@ -19,7 +19,7 @@
           id="star"
           d="m3.510995,8.544758l4.957194,0l1.531811,-4.709314l1.531812,4.709314l4.957193,0l-4.010447,2.910483l1.53189,4.709314l-4.010449,-2.910562l-4.010448,2.910562l1.531891,-4.709314l-4.010448,-2.910483z"
           stroke-width="1.5"
-          fill="transparent"
+          :fill="fill"
         />
       </g>
     </svg>
@@ -37,6 +37,10 @@ export default {
     shadow: {
       type: Boolean,
       default: false,
+    },
+    fill: {
+      type: String,
+      default: "transparent",
     },
   },
 };
