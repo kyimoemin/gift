@@ -6,7 +6,7 @@
     <!-- <Beach v-if="show" /> -->
     <!-- <Kiss v-if="show" /> -->
     <!-- <Flower /> -->
-    <Star />
+    <Stars />
   </div>
 </template>
 
@@ -18,7 +18,7 @@
 // import Kiss from "./components/Kiss";
 // import Flower from "./components/Flower";
 // import Car from "./components/Car";
-import Star from "./components/Star";
+import Stars from "./components/Stars";
 
 export default {
   name: "App",
@@ -30,7 +30,7 @@ export default {
     // Kiss,
     // Flower,
     // Car,
-    Star,
+    Stars,
   },
   data() {
     return {
