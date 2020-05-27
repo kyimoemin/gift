@@ -198,6 +198,7 @@
 </template>
 
 <script>
+//dration is 4.4s
 import Sparkle from "../assets/Sparkle";
 import Star from "../assets/Star";
 
@@ -210,6 +211,16 @@ export default {
 </script>
 
 <style scoped>
+.animation-wrapper {
+  background: linear-gradient(#f7078c44, transparent, transparent);
+
+  animation-name: fade-in;
+  animation-duration: 2.2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0, 1.01, 0.11, 1.01);
+}
 .three-star {
   position: absolute;
   bottom: 25vh;
@@ -882,6 +893,15 @@ export default {
     opacity: 0;
   }
   100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
     opacity: 1;
   }
 }

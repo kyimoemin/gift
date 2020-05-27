@@ -6,7 +6,7 @@
     <!-- <Beach v-if="show" /> -->
     <!-- <Kiss v-if="show" /> -->
     <!-- <Flower /> -->
-    <Stars />
+    <Stars v-if="show" />
   </div>
 </template>
 
@@ -42,8 +42,8 @@ export default {
       if (this.show) return;
       this.show = true;
       setTimeout(() => {
-        // this.show = false;
-      }, 2000);
+        this.show = false;
+      }, 4400);
     },
   },
 };
