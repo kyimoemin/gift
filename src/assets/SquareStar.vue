@@ -11,7 +11,7 @@
       </defs>
       <g>
         <title>
-          star
+          square star
         </title>
         <path
           :filter="shadow ? `url(${$route.path}#shadow)` : ''"
@@ -21,7 +21,7 @@
           fill-opacity="null"
           stroke-opacity="null"
           stroke-width="1.5"
-          fill="transparent"
+          :fill="fill"
         />
       </g>
     </svg>
@@ -38,6 +38,10 @@ export default {
     shadow: {
       type: Boolean,
       default: false,
+    },
+    fill: {
+      type: String,
+      default: "transparent",
     },
   },
 };
