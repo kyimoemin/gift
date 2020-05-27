@@ -49,83 +49,149 @@
       <div class="relative">
         <Star fill="#d047ad" color="white" shadow />
       </div>
+      <div class="dot s d1" />
+      <div class="dot s d2" />
     </div>
 
     <div class="star-group sg2">
       <div class="relative">
         <Star fill="white" color="#f7078c" shadow />
+        <div class="dot m d1" />
+        <div class="dot l d2" />
+        <div class="dot s d3" />
+        <div class="dot s d4" />
+        <div class="dot s d5" />
+        <div class="dot s d6" />
+        <div class="dot s d7" />
       </div>
     </div>
 
     <div class="star-group sg3">
       <div class="relative">
         <Star fill="#d047ad" color="white" />
+        <div class="dot m d1" />
+        <div class="dot m d2" />
+        <div class="dot s d3" />
+        <div class="dot s d4" />
+        <div class="dot s d5" />
+        <div class="dot s d6" />
+        <div class="dot s d7" />
+        <div class="dot s d8" />
       </div>
     </div>
 
     <div class="star-group sg4">
       <div class="relative">
         <Star fill="white" color="white" />
+        <div class="dot m d1" />
+        <div class="dot m d2" />
+        <div class="dot m d3" />
+        <div class="dot s d4" />
       </div>
     </div>
 
     <div class="star-group sg5">
       <div class="relative">
         <Star fill="#d047ad" color="white" />
+        <div class="dot m d1" />
+        <div class="dot m d2" />
+        <div class="dot s d3" />
       </div>
     </div>
 
     <div class="star-group sg6">
       <div class="relative">
         <Star fill="#d047ad" color="white" />
+        <div class="dot m d1" />
+        <div class="dot s d2" />
+        <div class="dot m d3" />
       </div>
     </div>
 
     <div class="star-group sg7">
       <div class="relative">
         <Star fill="#d047ad" color="white" />
+        <div class="dot m d1" />
+        <div class="dot l d2" />
+        <div class="dot l d3" />
+        <div class="dot s d4" />
+        <div class="dot s d5" />
+        <div class="dot s d6" />
+        <div class="dot s d7" />
+        <div class="dot s d8" />
       </div>
     </div>
 
     <div class="star-group sg8">
       <div class="relative">
         <Star fill="#d047ad" color="white" />
+        <div class="dot m d1" />
+        <div class="dot m d2" />
+        <div class="dot m d3" />
+        <div class="dot s d4" />
+        <div class="dot s d5" />
+        <div class="dot s d6" />
+        <div class="dot s d7" />
       </div>
     </div>
 
     <div class="star-group sg9">
       <div class="relative">
         <Star fill="white" color="white" />
+        <div class="dot s d1" />
+        <div class="dot s d2" />
+        <div class="dot  d3" />
       </div>
     </div>
 
     <div class="star-group sg10">
       <div class="relative">
         <Star fill="white" color="white" />
+        <div class="dot s d1" />
+        <div class="dot s d2" />
+        <div class="dot s d3" />
+        <div class="dot s d4" />
+        <div class="dot s d5" />
+        <div class="dot s d6" />
+        <div class="dot s d7" />
       </div>
     </div>
 
     <div class="star-group sg11">
       <div class="relative">
         <Star fill="#d047ad" color="white" />
+        <div class="dot s d1" />
+        <div class="dot l d2" />
+        <div class="dot s d3" />
+        <div class="dot s d4" />
       </div>
     </div>
 
     <div class="star-group sg12">
       <div class="relative">
         <Star fill="#d047ad" color="white" />
+        <div class="dot s d1" />
       </div>
     </div>
 
     <div class="star-group sg13">
       <div class="relative">
         <Star fill="#d047ad" color="white" />
+        <div class="dot s d1" />
+        <div class="dot s d2" />
+        <div class="dot s d3" />
+        <div class="dot s d4" />
+        <div class="dot s d5" />
       </div>
     </div>
 
     <div class="star-group sg14">
       <div class="relative">
         <Star fill="white" color="white" />
+        <div class="dot s d1" />
+        <div class="dot l d2" />
+        <div class="dot s d3" />
+        <div class="dot s d4" />
       </div>
     </div>
   </div>
@@ -371,6 +437,365 @@ export default {
   animation-delay: 0.25s;
 }
 
+.dot {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 0 9px 6px #ff1b98;
+  filter: blur(0.5px);
+  opacity: 0;
+  animation-name: twinkle;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-delay: inherit;
+  animation-fill-mode: forwards;
+}
+
+.dot.s {
+  transform: scale(0.4);
+}
+.dot.m {
+  transform: scale(0.6);
+}
+.dot.l {
+  transform: scale(0.8);
+}
+
+.sg1 .d1 {
+  bottom: 11px;
+  left: 2px;
+  animation-delay: 0.1s;
+}
+.sg1 .d2 {
+  top: 18px;
+  right: 1px;
+  animation-delay: 0.3s;
+}
+
+.sg2 .d1 {
+  bottom: 15px;
+  right: 1px;
+  animation-delay: 0.2s;
+}
+
+.sg2 .d2 {
+  top: 24px;
+  right: 8px;
+  animation-delay: 0.1s;
+}
+
+.sg2 .d3 {
+  right: 1px;
+  bottom: 5px;
+  animation-delay: 0.3s;
+}
+
+.sg2 .d4 {
+  left: 2px;
+  bottom: 7px;
+  animation-delay: 0.2s;
+}
+
+.sg2 .d5 {
+  top: 10px;
+  right: 1px;
+  animation-delay: 0.4s;
+}
+
+.sg2 .d6 {
+  left: 5px;
+  top: 16px;
+  animation-delay: 0.6s;
+}
+.sg2 .d7 {
+  bottom: 23px;
+  left: 5px;
+  animation-delay: 0.8s;
+}
+
+.sg3 .d1 {
+  bottom: 58px;
+  right: 3px;
+  animation-delay: 0.6s;
+}
+.sg3 .d2 {
+  bottom: 44px;
+  right: 1px;
+  animation-delay: 0.4s;
+}
+.sg3 .d3 {
+  bottom: 5px;
+  left: 3px;
+  animation-delay: 0.2s;
+}
+.sg3 .d4 {
+  top: 12px;
+  right: 9px;
+  animation-delay: 0.4s;
+}
+.sg3 .d5 {
+  top: 8px;
+  animation-delay: 0.8s;
+}
+.sg3 .d6 {
+  top: 12px;
+  left: 12px;
+  animation-delay: 0.2s;
+}
+.sg3 .d7 {
+  top: 17px;
+  left: 1px;
+  animation-delay: 0.5s;
+}
+.sg3 .d8 {
+  bottom: 20px;
+  left: 1px;
+  animation-delay: 0.7s;
+}
+
+.sg4 .d1 {
+  bottom: 27px;
+  right: 1px;
+  animation-delay: 0.1s;
+}
+.sg4 .d2 {
+  right: 3px;
+  top: 9px;
+  animation-delay: 0.6s;
+}
+.sg4 .d3 {
+  top: 32px;
+  left: 6px;
+  animation-delay: 0.2s;
+}
+.sg4 .d4 {
+  bottom: 14px;
+  left: 6px;
+  animation-delay: 0.5s;
+}
+
+.sg5 .d1 {
+  bottom: 16px;
+  right: 9px;
+  animation-delay: 0.1s;
+}
+.sg5 .d2 {
+  top: 15px;
+  animation-delay: 0.3s;
+}
+.sg5 .d3 {
+  left: 15px;
+  bottom: 4px;
+}
+
+.sg6 .d1 {
+  right: 13px;
+  bottom: 10px;
+  animation-delay: 0.3s;
+}
+.sg6 .d2 {
+  right: 17px;
+}
+.sg6 .d3 {
+  right: 11px;
+  top: 17px;
+  animation-delay: 0.1s;
+}
+
+.sg7 .d1 {
+  bottom: 17px;
+  left: 4px;
+  animation-delay: 0.3s;
+}
+.sg7 .d2 {
+  bottom: 11px;
+  left: 14px;
+  animation-delay: 0.1s;
+}
+.sg7 .d3 {
+  top: 8px;
+  left: 9px;
+}
+.sg7 .d4 {
+  top: 11px;
+  animation-delay: 0.2s;
+}
+.sg7 .d5 {
+  top: 17px;
+  right: 4px;
+  animation-delay: 0.4s;
+}
+.sg7 .d6 {
+  top: 17px;
+  left: 4px;
+  animation-delay: 0.3s;
+}
+.sg7 .d7 {
+  bottom: 10px;
+  right: 4px;
+  animation-delay: 0.2s;
+}
+.sg7 .d8 {
+  right: 9px;
+}
+
+.sg8 .d1 {
+  right: 13px;
+  animation-delay: 0.2s;
+}
+.sg8 .d2 {
+  top: 15px;
+  left: 4px;
+  animation-delay: 0.3s;
+}
+.sg8 .d3 {
+  top: 24px;
+  right: 6px;
+  animation-delay: 0.1s;
+}
+.sg8 .d4 {
+  bottom: 7px;
+  right: 3px;
+  animation-delay: 0.3s;
+}
+.sg8 .d5 {
+  left: 4px;
+  bottom: 4px;
+  animation-delay: 0.1s;
+}
+.sg8 .d6 {
+  left: 13px;
+  top: 6px;
+  animation-delay: 0.4s;
+}
+.sg8 .d7 {
+  top: 10px;
+  right: 6px;
+  animation-delay: 0.2s;
+}
+
+.sg9 .d1 {
+  bottom: 28px;
+  right: 1px;
+}
+.sg9 .d2 {
+  bottom: 52px;
+  left: 1px;
+  animation-delay: 0.2s;
+}
+.sg9 .d3 {
+  left: 9px;
+  top: 15px;
+  animation-delay: 0.3s;
+}
+
+.sg10 .d1 {
+  right: 15px;
+  top: 1px;
+  animation-delay: 0.3s;
+}
+.sg10 .d2 {
+  right: 20px;
+  bottom: 10px;
+  animation-delay: 0.1s;
+}
+.sg10 .d3 {
+  top: 13px;
+  right: 1px;
+  animation-delay: 0.2s;
+}
+.sg10 .d4 {
+  top: 32px;
+  right: 5px;
+  animation-delay: 0.4s;
+}
+.sg10 .d5 {
+  top: 22px;
+  left: 13px;
+  animation-delay: 0.1s;
+}
+.sg10 .d6 {
+  bottom: 28px;
+  left: 3px;
+  animation-delay: 0.2s;
+}
+.sg10 .d7 {
+  bottom: 16px;
+  left: 6px;
+}
+
+.sg11 .d1 {
+  bottom: 9px;
+  left: 5px;
+  animation-delay: 0.2s;
+}
+.sg11 .d2 {
+  top: 16px;
+  right: 2px;
+}
+.sg11 .d3 {
+  left: 14px;
+  top: 8px;
+  animation-delay: 0.3s;
+}
+.sg11 .d4 {
+  top: 19px;
+  left: 9px;
+  animation-delay: 0.1s;
+}
+
+.sg12 .d1 {
+  bottom: 9px;
+  left: 1px;
+}
+
+.sg13 .d1 {
+  right: 14px;
+  bottom: 17px;
+  animation-delay: 0.1s;
+}
+.sg13 .d2 {
+  right: 19px;
+  top: 4px;
+  animation-delay: 0.4s;
+}
+.sg13 .d3 {
+  left: 5px;
+  top: 11px;
+  animation-delay: 0.2s;
+}
+.sg13 .d4 {
+  bottom: 55px;
+  animation-delay: 0.3s;
+}
+.sg13 .d5 {
+  bottom: 45px;
+  left: 3px;
+  animation-delay: 0.1s;
+}
+
+.sg14 .d1 {
+  bottom: 30px;
+  left: 2px;
+  animation-delay: 0.3s;
+}
+.sg14 .d2 {
+  top: 26px;
+  right: 4px;
+}
+.sg14 .d3 {
+  top: 46px;
+  right: 1px;
+  animation-delay: 0.2s;
+}
+.sg14 .d4 {
+  top: 66px;
+  animation-delay: 0.1s;
+}
+
 @keyframes scale {
   0% {
     transform: scale(0);
@@ -450,6 +875,14 @@ export default {
   100% {
     transform: translateY(0);
     animation-timing-function: ease-in-out;
+  }
+}
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 </style>
