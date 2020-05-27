@@ -478,124 +478,124 @@ export default {
 .sg1 .d1 {
   bottom: 11px;
   left: 2px;
-  animation-delay: 0.1s;
+  animation-delay: 1.1s;
 }
 .sg1 .d2 {
   top: 18px;
   right: 1px;
-  animation-delay: 0.3s;
+  animation-delay: 1.3s;
 }
 
 .sg2 .d1 {
   bottom: 15px;
   right: 1px;
-  animation-delay: 0.2s;
+  animation-delay: 1.2s;
 }
 
 .sg2 .d2 {
   top: 24px;
   right: 8px;
-  animation-delay: 0.1s;
+  animation-delay: 1.1s;
 }
 
 .sg2 .d3 {
   right: 1px;
   bottom: 5px;
-  animation-delay: 0.3s;
+  animation-delay: 1.3s;
 }
 
 .sg2 .d4 {
   left: 2px;
   bottom: 7px;
-  animation-delay: 0.2s;
+  animation-delay: 1.2s;
 }
 
 .sg2 .d5 {
   top: 10px;
   right: 1px;
-  animation-delay: 0.4s;
+  animation-delay: 1.4s;
 }
 
 .sg2 .d6 {
   left: 5px;
   top: 16px;
-  animation-delay: 0.6s;
+  animation-delay: 1.6s;
 }
 .sg2 .d7 {
   bottom: 23px;
   left: 5px;
-  animation-delay: 0.8s;
+  animation-delay: 1.8s;
 }
 
 .sg3 .d1 {
   bottom: 58px;
   right: 3px;
-  animation-delay: 0.6s;
+  animation-delay: 1.6s;
 }
 .sg3 .d2 {
   bottom: 44px;
   right: 1px;
-  animation-delay: 0.4s;
+  animation-delay: 1.4s;
 }
 .sg3 .d3 {
   bottom: 5px;
   left: 3px;
-  animation-delay: 0.2s;
+  animation-delay: 1.2s;
 }
 .sg3 .d4 {
   top: 12px;
   right: 9px;
-  animation-delay: 0.4s;
+  animation-delay: 1.4s;
 }
 .sg3 .d5 {
   top: 8px;
-  animation-delay: 0.8s;
+  animation-delay: 1.8s;
 }
 .sg3 .d6 {
   top: 12px;
   left: 12px;
-  animation-delay: 0.2s;
+  animation-delay: 1.2s;
 }
 .sg3 .d7 {
   top: 17px;
   left: 1px;
-  animation-delay: 0.5s;
+  animation-delay: 1.5s;
 }
 .sg3 .d8 {
   bottom: 20px;
   left: 1px;
-  animation-delay: 0.7s;
+  animation-delay: 1.7s;
 }
 
 .sg4 .d1 {
   bottom: 27px;
   right: 1px;
-  animation-delay: 0.1s;
+  animation-delay: 1.1s;
 }
 .sg4 .d2 {
   right: 3px;
   top: 9px;
-  animation-delay: 0.6s;
+  animation-delay: 1.6s;
 }
 .sg4 .d3 {
   top: 32px;
   left: 6px;
-  animation-delay: 0.2s;
+  animation-delay: 1.2s;
 }
 .sg4 .d4 {
   bottom: 14px;
   left: 6px;
-  animation-delay: 0.5s;
+  animation-delay: 1.5s;
 }
 
 .sg5 .d1 {
   bottom: 16px;
   right: 9px;
-  animation-delay: 0.1s;
+  animation-delay: 1.1s;
 }
 .sg5 .d2 {
   top: 15px;
-  animation-delay: 0.3s;
+  animation-delay: 1.3s;
 }
 .sg5 .d3 {
   left: 15px;
@@ -605,7 +605,7 @@ export default {
 .sg6 .d1 {
   right: 13px;
   bottom: 10px;
-  animation-delay: 0.3s;
+  animation-delay: 1.3s;
 }
 .sg6 .d2 {
   right: 17px;
@@ -613,18 +613,18 @@ export default {
 .sg6 .d3 {
   right: 11px;
   top: 17px;
-  animation-delay: 0.1s;
+  animation-delay: 1.1s;
 }
 
 .sg7 .d1 {
   bottom: 17px;
   left: 4px;
-  animation-delay: 0.3s;
+  animation-delay: 1.3s;
 }
 .sg7 .d2 {
   bottom: 11px;
   left: 14px;
-  animation-delay: 0.1s;
+  animation-delay: 1.1s;
 }
 .sg7 .d3 {
   top: 8px;
@@ -632,22 +632,22 @@ export default {
 }
 .sg7 .d4 {
   top: 11px;
-  animation-delay: 0.2s;
+  animation-delay: 1.2s;
 }
 .sg7 .d5 {
   top: 17px;
   right: 4px;
-  animation-delay: 0.4s;
+  animation-delay: 1.4s;
 }
 .sg7 .d6 {
   top: 17px;
   left: 4px;
-  animation-delay: 0.3s;
+  animation-delay: 1.3s;
 }
 .sg7 .d7 {
   bottom: 10px;
   right: 4px;
-  animation-delay: 0.2s;
+  animation-delay: 1.2s;
 }
 .sg7 .d8 {
   right: 9px;
@@ -655,37 +655,37 @@ export default {
 
 .sg8 .d1 {
   right: 13px;
-  animation-delay: 0.2s;
+  animation-delay: 1.2s;
 }
 .sg8 .d2 {
   top: 15px;
   left: 4px;
-  animation-delay: 0.3s;
+  animation-delay: 1.3s;
 }
 .sg8 .d3 {
   top: 24px;
   right: 6px;
-  animation-delay: 0.1s;
+  animation-delay: 1.1s;
 }
 .sg8 .d4 {
   bottom: 7px;
   right: 3px;
-  animation-delay: 0.3s;
+  animation-delay: 1.3s;
 }
 .sg8 .d5 {
   left: 4px;
   bottom: 4px;
-  animation-delay: 0.1s;
+  animation-delay: 1.1s;
 }
 .sg8 .d6 {
   left: 13px;
   top: 6px;
-  animation-delay: 0.4s;
+  animation-delay: 1.4s;
 }
 .sg8 .d7 {
   top: 10px;
   right: 6px;
-  animation-delay: 0.2s;
+  animation-delay: 1.2s;
 }
 
 .sg9 .d1 {
@@ -695,43 +695,43 @@ export default {
 .sg9 .d2 {
   bottom: 52px;
   left: 1px;
-  animation-delay: 0.2s;
+  animation-delay: 1.2s;
 }
 .sg9 .d3 {
   left: 9px;
   top: 15px;
-  animation-delay: 0.3s;
+  animation-delay: 1.3s;
 }
 
 .sg10 .d1 {
   right: 15px;
   top: 1px;
-  animation-delay: 0.3s;
+  animation-delay: 1.3s;
 }
 .sg10 .d2 {
   right: 20px;
   bottom: 10px;
-  animation-delay: 0.1s;
+  animation-delay: 1.1s;
 }
 .sg10 .d3 {
   top: 13px;
   right: 1px;
-  animation-delay: 0.2s;
+  animation-delay: 1.2s;
 }
 .sg10 .d4 {
   top: 32px;
   right: 5px;
-  animation-delay: 0.4s;
+  animation-delay: 1.4s;
 }
 .sg10 .d5 {
   top: 22px;
   left: 13px;
-  animation-delay: 0.1s;
+  animation-delay: 1.1s;
 }
 .sg10 .d6 {
   bottom: 28px;
   left: 3px;
-  animation-delay: 0.2s;
+  animation-delay: 1.2s;
 }
 .sg10 .d7 {
   bottom: 16px;
@@ -741,7 +741,7 @@ export default {
 .sg11 .d1 {
   bottom: 9px;
   left: 5px;
-  animation-delay: 0.2s;
+  animation-delay: 1.2s;
 }
 .sg11 .d2 {
   top: 16px;
@@ -750,12 +750,12 @@ export default {
 .sg11 .d3 {
   left: 14px;
   top: 8px;
-  animation-delay: 0.3s;
+  animation-delay: 1.3s;
 }
 .sg11 .d4 {
   top: 19px;
   left: 9px;
-  animation-delay: 0.1s;
+  animation-delay: 1.1s;
 }
 
 .sg12 .d1 {
@@ -766,32 +766,32 @@ export default {
 .sg13 .d1 {
   right: 14px;
   bottom: 17px;
-  animation-delay: 0.1s;
+  animation-delay: 1.1s;
 }
 .sg13 .d2 {
   right: 19px;
   top: 4px;
-  animation-delay: 0.4s;
+  animation-delay: 1.4s;
 }
 .sg13 .d3 {
   left: 5px;
   top: 11px;
-  animation-delay: 0.2s;
+  animation-delay: 1.2s;
 }
 .sg13 .d4 {
   bottom: 55px;
-  animation-delay: 0.3s;
+  animation-delay: 1.3s;
 }
 .sg13 .d5 {
   bottom: 45px;
   left: 3px;
-  animation-delay: 0.1s;
+  animation-delay: 1.1s;
 }
 
 .sg14 .d1 {
   bottom: 30px;
   left: 2px;
-  animation-delay: 0.3s;
+  animation-delay: 1.3s;
 }
 .sg14 .d2 {
   top: 26px;
@@ -800,11 +800,11 @@ export default {
 .sg14 .d3 {
   top: 46px;
   right: 1px;
-  animation-delay: 0.2s;
+  animation-delay: 1.2s;
 }
 .sg14 .d4 {
   top: 66px;
-  animation-delay: 0.1s;
+  animation-delay: 1.1s;
 }
 
 @keyframes scale {
