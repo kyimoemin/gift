@@ -36,6 +36,9 @@ export default {
 </script>
 
 <style scoped>
+.animation-wrapper {
+  animation-name: none;
+}
 .h1 {
   top: 13vh;
   right: 10vw;
