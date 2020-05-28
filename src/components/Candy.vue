@@ -302,7 +302,7 @@ export default {
   box-sizing: border-box;
   position: absolute;
   transform: scale(0);
-  border-width: 8px !important;
+  border-width: 1px !important;
   animation-name: ripple;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
