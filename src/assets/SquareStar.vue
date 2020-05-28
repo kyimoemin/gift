@@ -46,3 +46,11 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+div {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>

@@ -6,7 +6,8 @@
     <!-- <Beach v-if="show" /> -->
     <!-- <Kiss v-if="show" /> -->
     <!-- <Flower /> -->
-    <Stars v-if="show" />
+    <!-- <Stars v-if="show" /> -->
+    <MagicWand v-if="show" />
   </div>
 </template>
 
@@ -18,7 +19,8 @@
 // import Kiss from "./components/Kiss";
 // import Flower from "./components/Flower";
 // import Car from "./components/Car";
-import Stars from "./components/Stars";
+// import Stars from "./components/Stars";
+import MagicWand from "./components/MagicWand";
 
 export default {
   name: "App",
@@ -30,7 +32,8 @@ export default {
     // Kiss,
     // Flower,
     // Car,
-    Stars,
+    // Stars,
+    MagicWand,
   },
   data() {
     return {
@@ -42,7 +45,7 @@ export default {
       if (this.show) return;
       this.show = true;
       setTimeout(() => {
-        this.show = false;
+        // this.show = false;
       }, 4400);
     },
   },
@@ -81,6 +84,13 @@ svg {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+
+  animation-name: fade-in;
+  /* animation-duration: 2.2s; */
+  animation-fill-mode: forwards;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0, 1.01, 0.11, 1.01);
 }
 
 .flex {
@@ -98,5 +108,14 @@ svg {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 </style>
