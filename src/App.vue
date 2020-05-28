@@ -6,6 +6,7 @@
     <!-- <Beach v-if="show" /> -->
     <!-- <Kiss v-if="show" /> -->
     <!-- <Flower /> -->
+    <!-- <Car v-if="show" /> -->
     <!-- <Stars v-if="show" /> -->
     <MagicWand v-if="show" />
   </div>
@@ -14,7 +15,7 @@
 <script>
 // import Candy from "./components/Candy";
 // import Hearts from "./components/Hearts";
-// import Diamond from "./components/Diamond";/
+// import Diamond from "./components/Diamond";
 // import Beach from "./components/Beach";
 // import Kiss from "./components/Kiss";
 // import Flower from "./components/Flower";
@@ -45,8 +46,8 @@ export default {
       if (this.show) return;
       this.show = true;
       setTimeout(() => {
-        // this.show = false;
-      }, 4400);
+        this.show = false;
+      }, 2000);
     },
   },
 };
