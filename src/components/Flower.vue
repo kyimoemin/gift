@@ -28,12 +28,12 @@
           />
         </div>
         <img
-          class="f8"
+          class="f f8"
           src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_8.png"
         />
         <img
-          class="flower"
-          src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_14.png"
+          class="f flower"
+          src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_1.png"
         />
         <div class="f f6">
           <img
@@ -41,23 +41,23 @@
           />
         </div>
         <img
-          class="f1"
+          class="f f1"
           src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_2.png"
         />
         <img
-          class="f2 hue"
+          class="f f2 hue"
           src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_7.png"
         />
         <img
-          class="f5 hue"
+          class="f f5 hue"
           src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_7.png"
         />
         <img
-          class="f3"
+          class="f f3"
           src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_5.png"
         />
         <img
-          class="f4"
+          class="f f4"
           src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_9.png"
         />
       </div>
@@ -82,6 +82,9 @@ img {
   position: relative;
   width: 100%;
   height: 100%;
+  animation-name: slide-up;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 .flower {
   width: 100%;
@@ -98,10 +101,14 @@ img {
   width: 22%;
   right: 22%;
   top: 17%;
+  animation-name: rotate;
+  transform-origin: left bottom;
 }
 .f3 {
   width: 22%;
   top: -2%;
+  transform-origin: center bottom;
+  animation-name: f3;
 }
 .f4 {
   width: 22%;
@@ -111,11 +118,16 @@ img {
   width: 22%;
   left: 23%;
   top: 6%;
+  transform: rotate(3deg);
+  animation-name: rotate;
+  transform-origin: center bottom;
+  animation-delay: 0.3s;
 }
 .f6 {
   width: 25%;
   top: 14%;
   right: 31%;
+  animation-name: rotate;
 }
 .f6 img {
   transform: rotate(-15deg);
@@ -132,36 +144,58 @@ img {
   width: 24%;
   left: 14%;
   top: 36%;
+  transform: rotate(3deg);
+  animation-name: rotate;
+  transform-origin: right top;
+  animation-delay: 0.2s;
 }
 .f9 {
   width: 24%;
+  height: 24%;
   left: 6%;
   top: 24%;
+  animation-name: scale;
+  transform-origin: right center;
 }
 .f9 img {
   transform: rotate(63deg);
 }
 .f10 {
   width: 24%;
+  height: 24%;
   top: 31%;
   right: 19%;
+  animation-name: rotate;
+  transform: rotate(3deg);
+  transform-origin: left bottom;
+  animation-delay: 0.5s;
 }
 .f10 img {
   transform: rotate(202deg);
 }
 .f11 {
   width: 24%;
+  height: 24%;
   top: 1%;
   right: 21%;
+  transform: scale(0.3);
+  transform-origin: left bottom;
+  animation-name: scale;
+  animation-delay: 0.2s;
 }
 .f11 img {
   transform: rotate(181deg);
   filter: hue-rotate(29deg) saturate(1.5);
 }
 .f12 {
-  width: 24%;
-  right: 8%;
+  width: 22%;
+  height: 22%;
+  right: 11%;
   top: 23%;
+  transform: scale(0.3);
+  transform-origin: left center;
+  animation-name: scale;
+  animation-delay: 0.3s;
 }
 
 .f12 img {
@@ -170,8 +204,90 @@ img {
 
 .f {
   position: absolute;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 .f img {
   width: 100%;
+}
+@keyframes f3 {
+  0% {
+    transform: translateY(30px) rotate(0);
+  }
+  30% {
+    transform: translateY(0px) rotate(0);
+    animation-timing-function: ease-in-out;
+  }
+  60% {
+    transform: translateY(0px) rotate(4deg);
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translateY(0px) rotate(-3deg);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(0.3);
+  }
+  25% {
+    transform: scale(1.2);
+    animation-timing-function: ease-in-out;
+  }
+  50% {
+    transform: scale(0.95);
+    animation-timing-function: ease-in-out;
+  }
+  75% {
+    transform: scale(1.1);
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(3deg);
+  }
+  20% {
+    transform: rotate(-2deg);
+    animation-timing-function: ease-in-out;
+  }
+  40% {
+    transform: rotate(2deg);
+    animation-timing-function: ease-in-out;
+  }
+  60% {
+    transform: rotate(-1deg);
+    animation-timing-function: ease-in-out;
+  }
+  80% {
+    transform: rotate(1deg);
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(30px);
+  }
+  25% {
+    transform: translateY(-5px);
+    animation-timing-function: ease-in-out;
+  }
+  50% {
+    transform: translateY(3px);
+    animation-timing-function: ease-in-out;
+  }
+  75% {
+    transform: translateY(-3px);
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 </style>
