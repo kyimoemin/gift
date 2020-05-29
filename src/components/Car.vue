@@ -1,5 +1,5 @@
 <template>
-  <div class="animation-wrapper">
+  <div class="animation-wrapper flex-center">
     <div class="car">
       <img
         src="https://res-global.1315cdn.com:11443/statics/live/common/gift/10_Porsche_0.png"
@@ -11,13 +11,12 @@
 <style scoped>
 /* duration is 2s */
 .car {
-  transform: scaleX(-1);
+  transform: translate(60vw, -50vh) scale(0.2) scaleX(-1);
   width: 160px;
   position: absolute;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  right: -160px;
   animation-name: drive;
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -47,18 +46,38 @@
 
 @keyframes drive {
   0% {
-    transform: scale(0.2) translate(0, 0) scaleX(-1);
+    transform: translate(60vw, -50vh) scale(0.2) scaleX(-1);
   }
   50% {
-    transform: scale(1) translate(-120vw, 40vh) scaleX(-1);
+    transform: translate(-60vw, 0vh) scale(1) scaleX(-1);
   }
   51% {
-    transform: scale(1) translate(-120vw, 39vh);
+    transform: translate(-60vw, 0vh) scale(1);
   }
   100% {
-    transform: scale(1.4) translate(-45vw, 40vh);
+    transform: translate(30vw, 30vh) scale(1.4);
   }
 }
+@media only screen and (min-width: 400px) {
+  .car {
+    transform: translate(200px, -50vh) scale(0.2) scaleX(-1);
+  }
+  @keyframes drive {
+    0% {
+      transform: translate(200px, -50vh) scale(0.2) scaleX(-1);
+    }
+    50% {
+      transform: translate(-200px, 0vh) scale(1) scaleX(-1);
+    }
+    51% {
+      transform: translate(-200px, 0vh) scale(1);
+    }
+    100% {
+      transform: translate(100px, 30vh) scale(1.4);
+    }
+  }
+}
+
 @keyframes fire {
   0% {
     transform: rotate(27deg) translate(-79px, 18px) rotateY(-12deg) scaleX(2);
@@ -69,6 +88,7 @@
 }
 
 .animation-wrapper {
+  animation-name: none;
   animation-name: fade-in;
   animation-duration: 1s;
   animation-fill-mode: forwards;
