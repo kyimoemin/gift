@@ -5,8 +5,8 @@
     <!-- <Diamond v-if="show" /> -->
     <!-- <Beach v-if="show" /> -->
     <!-- <Kiss v-if="show" /> -->
-    <!-- <Flower /> -->
-    <Car v-if="show" />
+    <Flower v-if="show" />
+    <!-- <Car v-if="show" /> -->
     <!-- <Stars v-if="show" /> -->
     <!-- <MagicWand v-if="show" /> -->
   </div>
@@ -18,8 +18,8 @@
 // import Diamond from "./components/Diamond";
 // import Beach from "./components/Beach";
 // import Kiss from "./components/Kiss";
-// import Flower from "./components/Flower";
-import Car from "./components/Car";
+import Flower from "./components/Flower";
+// import Car from "./components/Car";
 // import Stars from "./components/Stars";
 // import MagicWand from "./components/MagicWand";
 
@@ -31,8 +31,8 @@ export default {
     // Diamond,
     // Beach,
     // Kiss,
-    // Flower,
-    Car,
+    Flower,
+    // Car,
     // Stars,
     // MagicWand,
   },
@@ -46,7 +46,7 @@ export default {
       if (this.show) return;
       this.show = true;
       setTimeout(() => {
-        this.show = false;
+        // this.show = false;
       }, 2000);
     },
   },

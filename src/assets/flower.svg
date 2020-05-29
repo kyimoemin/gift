@@ -1,0 +1,15 @@
+<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+      <!--Created with Method Draw - http://github.com/duopixel/Method-Draw/-->
+      <g>
+        <title>
+          flower
+        </title>
+        <path
+          stroke="white"
+          id="flower"
+          d="M 5 5 C 5 2 9 2 9 5 C 12 5 12 9 9 9 C 9 12 5 12 5 9 C 2 9 2 5 5 5 Z M 6 6 A 1 1 0 0 0 8 8 A 1 1 0 0 0 6 6 Z"
+          stroke-width="0"
+          fill="white"
+        />
+      </g>
+    </svg>
