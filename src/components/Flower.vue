@@ -12,11 +12,6 @@
             src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_8.png"
           />
         </div>
-        <div class="f f10">
-          <img
-            src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_8.png"
-          />
-        </div>
         <div class="f f9">
           <img
             src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_8.png"
@@ -30,10 +25,6 @@
         <img
           class="f f8"
           src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_8.png"
-        />
-        <img
-          class="f flower"
-          src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_1.png"
         />
         <div class="f f6">
           <img
@@ -52,6 +43,15 @@
           class="f f5 hue"
           src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_7.png"
         />
+        <div class="f f10">
+          <img
+            src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_8.png"
+          />
+        </div>
+        <img
+          class="f flower"
+          src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_14.png"
+        />
         <img
           class="f f3"
           src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_5.png"
@@ -62,12 +62,16 @@
         />
       </div>
     </div>
+    <!-- <div class="white-flowers">
+      <img src="../assets/flower.svg" />
+    </div> -->
   </div>
 </template>
 
 <style scoped>
 .animation-wrapper {
-  animation-name: none;
+  /* animation-name: none; */
+  animation-duration: 1.7s;
 }
 img {
   position: absolute;
@@ -289,5 +293,14 @@ img {
   100% {
     transform: translateY(0);
   }
+}
+
+.white-flowers {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.white-flowers img {
+  height: 100px;
 }
 </style>
