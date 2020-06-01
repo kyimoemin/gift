@@ -5,10 +5,11 @@
     <!-- <Diamond v-if="show" /> -->
     <!-- <Beach v-if="show" /> -->
     <!-- <Kiss v-if="show" /> -->
-    <Flower v-if="show" />
+    <!-- <Flower v-if="show" /> -->
     <!-- <Car v-if="show" /> -->
     <!-- <Stars v-if="show" /> -->
     <!-- <MagicWand v-if="show" /> -->
+    <Ballons v-if="show" />
   </div>
 </template>
 
@@ -18,10 +19,11 @@
 // import Diamond from "./components/Diamond";
 // import Beach from "./components/Beach";
 // import Kiss from "./components/Kiss";
-import Flower from "./components/Flower";
+// import Flower from "./components/Flower";
 // import Car from "./components/Car";
 // import Stars from "./components/Stars";
 // import MagicWand from "./components/MagicWand";
+import Ballons from "./components/Ballons";
 
 export default {
   name: "App",
@@ -31,10 +33,11 @@ export default {
     // Diamond,
     // Beach,
     // Kiss,
-    Flower,
+    // Flower,
     // Car,
     // Stars,
     // MagicWand,
+    Ballons,
   },
   data() {
     return {
@@ -47,7 +50,7 @@ export default {
       this.show = true;
       setTimeout(() => {
         this.show = false;
-      }, 3500);
+      }, 8000);
     },
   },
 };
