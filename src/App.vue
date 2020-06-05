@@ -24,20 +24,7 @@ import Hearts from "./components/Hearts";
 import Kiss from "./components/Kiss";
 import MagicWand from "./components/MagicWand";
 import Stars from "./components/Stars";
-
-// values are duration in millisecond
-const names = {
-  ballon: 8000,
-  beach: 4000,
-  candy: 2500,
-  car: 2000,
-  diamond: 4000,
-  flower: 3400,
-  heart: 6800,
-  kiss: 3000,
-  magicwand: 2700,
-  star: 4400,
-};
+import { DURATIONS } from "./constants";
 
 export default {
   name: "App",
@@ -74,14 +61,14 @@ export default {
       this.show = true;
       setTimeout(() => {
         this.show = false;
-      }, names[this.name]);
+      }, DURATIONS[this.name]);
     },
     validateName() {
-      for (const giftName in names) if (giftName === this.name) return;
+      for (const giftName in DURATIONS) if (giftName === this.name) return;
       throw new Error(
-        `Props 'name' of GiftComponent must be one of '${names.join(
-          "','"
-        )}'. But you are using '${this.name}'.`
+        `Props 'name' of GiftComponent must be one of '${Object.keys(
+          DURATIONS
+        ).join("','")}'. But you are using '${this.name}'.`
       );
     },
   },
