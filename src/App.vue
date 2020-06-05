@@ -27,7 +27,7 @@ import Stars from "./components/Stars";
 import { DURATIONS } from "./constants";
 
 export default {
-  name: "App",
+  name: "GiftAnimation",
   components: {
     Candy,
     Hearts,

@@ -1,8 +1,8 @@
-import App from "./App.vue";
+import GiftAnimation from "./App.vue";
 function install(Vue) {
   if (install.installed) return;
   install.installed = true;
-  Vue.component("Gift", App);
+  Vue.component("Gift", GiftAnimation);
 }
 
 const plugin = {
@@ -20,6 +20,6 @@ if (GlobalVue) {
   GlobalVue.use(plugin);
 }
 
-App.install = install;
+GiftAnimation.install = install;
 
-export default App;
+export default GiftAnimation;
