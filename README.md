@@ -50,6 +50,6 @@ export default {
 
 ## Props
 
-| Name   | Description                                                                                                   |
-| ------ | ------------------------------------------------------------------------------------------------------------- |
-| `name` | animation names: `ballon`, `beach`, `candy`, `car`, `diamond`, `flower`, `heart`, `kiss`, `magicwand`, `star` |
+| Name   | Values                                                                                       | Description                           |
+| ------ | -------------------------------------------------------------------------------------------- | ------------------------------------- |
+| `name` | `ballon`, `beach`, `candy`, `car`, `diamond`, `flower`, `heart`, `kiss`, `magicwand`, `star` | animation names that you want to show |
