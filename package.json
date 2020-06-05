@@ -1,11 +1,12 @@
 {
   "name": "gift-animation",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "main": "./dist/gift-animation.common.js",
+  "homepage": "https://github.com/Kyi-Moe-Min/gift",
   "author": {
     "name": "Kyi Moe Min",
     "email": "kyimoemin0@gmail.com",
-    "url": "https://github.com/Kyi-Moe-Min/gift"
+    "url": "https://github.com/Kyi-Moe-Min"
   },
   "keywords": [
     "gift-animation"
