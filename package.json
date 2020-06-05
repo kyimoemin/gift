@@ -1,6 +1,6 @@
 {
   "name": "gift-animation",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "main": "./dist/gift-animation.common.js",
   "author": {
     "name": "Kyi Moe Min",

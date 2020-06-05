@@ -10,7 +10,7 @@ Vue library for gift-animation
 npm i gift-animation
 ```
 
-2. import css file to root js file.
+2. import css file in script tag of root vue file.
 
 ```
   import "gift-animation/dist/gift-animation.css";
