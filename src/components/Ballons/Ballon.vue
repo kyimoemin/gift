@@ -9,6 +9,7 @@
       `height:${this.height}px;
      z-index:${this.height};
      left:${this.leftPosition}vw;
+     top:${this.topPosition}%;
      `
     "
   />
@@ -33,24 +34,24 @@ export default {
     leftPosition() {
       return getRandom(0, 80);
     },
+    topPosition() {
+      return getRandom(90, 140, 5);
+    },
     x() {
       return getRandom(0, 80) * (this.leftPosition < 40 ? 1 : -1);
     },
     y() {
       return getRandom(60, 90);
     },
-    delay() {
-      return getRandom(0, 4000, 300);
-    },
   },
   mounted() {
-    setTimeout(this.fly, this.delay);
+    setTimeout(this.fly, (this.topPosition - 90) * 10);
   },
   methods: {
     fly() {
       const { ballon } = this.$refs;
-      console.log(this.delay);
-      // ballon.style.opacity = 0;
+      console.log(this.topPosition);
+      ballon.style.opacity = 0;
       ballon.style.transform = `translate(${this.x}vw,-${
         this.y
       }vh) rotate(${this.x / 3}deg)`;
@@ -62,7 +63,7 @@ export default {
 <style scoped>
 .ballon {
   position: absolute;
-  top: 100%;
+  /* top: 100%; */
   transition: transform 8s linear, opacity 3s linear 5s;
 }
 </style>

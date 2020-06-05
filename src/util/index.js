@@ -6,5 +6,5 @@ export function runAsync(func) {
 export const getRandom = (start, end, gap = 1) => {
   const r = Math.random();
   const multiplier = (end - start) / gap;
-  return Math.floor(r * multiplier + start) * gap;
+  return Math.round(r * multiplier) * gap + start;
 };
