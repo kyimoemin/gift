@@ -1,34 +1,13 @@
 # gift
 
-## Project setup
+## Event
 
-```
-npm install
-```
+| Name             | Description         |
+| ---------------- | ------------------- |
+| `show-animation` | start the animation |
 
-### Compiles and hot-reloads for development
+## Props
 
-```
-npm start
-```
-
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
-### Lints and fixes files
-
-```
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-## BUGS
-
-Beach - not responsive to PC screen
-Car - need transition improvement car moving in PC screen
+| Name   | Description                                                                                                   |
+| ------ | ------------------------------------------------------------------------------------------------------------- |
+| `name` | animation names: `ballon`, `beach`, `candy`, `car`, `diamond`, `flower`, `heart`, `kiss`, `magicwand`, `star` |

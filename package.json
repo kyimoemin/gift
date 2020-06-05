@@ -1,7 +1,13 @@
 {
   "name": "gift",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "main": "./src/index.vue",
+  "author": {
+    "name": "Kyi Moe Min",
+    "email": "kyimoemin0@gmail.com",
+    "url": "https://github.com/Kyi-Moe-Min/gift"
+  },
   "scripts": {
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build",

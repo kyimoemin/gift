@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import App from "./App.vue";
+import App from "./Demo.vue";
 
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
