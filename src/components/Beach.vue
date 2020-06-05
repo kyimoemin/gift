@@ -3,63 +3,63 @@
     <div class="wrapper">
       <img
         class="cloud"
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/7_bikini_33.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/7_bikini_33.png"
       />
       <img
         class="sand"
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/7_bikini_23.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/7_bikini_23.png"
       />
       <img
         class="wave"
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/7_bikini_30.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/7_bikini_30.png"
       />
       <img
         class="umbrella"
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/7_bikini_24.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/7_bikini_24.png"
       />
       <img
         class="livetube"
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/7_bikini_25.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/7_bikini_25.png"
       />
       <img
         class="sun"
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/7_bikini_27.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/7_bikini_27.png"
       />
       <img
         class="summer"
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/7_bikini_28.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/7_bikini_28.png"
       />
       <img
         class="watermelon"
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/7_bikini_29.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/7_bikini_29.png"
       />
       <img
         class="ball"
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/7_bikini_31.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/7_bikini_31.png"
       />
       <img
         class="ballon"
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/7_bikini_32.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/7_bikini_32.png"
       />
       <img
         class="drink"
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/7_bikini_34.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/7_bikini_34.png"
       />
       <img
         class="rock"
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/7_bikini_39.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/7_bikini_39.png"
       />
       <img
         class="starfish"
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/7_bikini_40.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/7_bikini_40.png"
       />
       <img
         class="shell"
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/7_bikini_41.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/7_bikini_41.png"
       />
       <img
         class="bikini"
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/7_bikini_50.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/7_bikini_50.png"
       />
     </div>
   </div>

@@ -4,61 +4,61 @@
       <div class="relative flex-center">
         <div class="f f12">
           <img
-            src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_8.png"
+            src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/1_flower_8.png"
           />
         </div>
         <div class="f f11">
           <img
-            src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_8.png"
+            src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/1_flower_8.png"
           />
         </div>
         <div class="f f9">
           <img
-            src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_8.png"
+            src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/1_flower_8.png"
           />
         </div>
         <div class="f f7">
           <img
-            src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_13.png"
+            src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/1_flower_13.png"
           />
         </div>
         <img
           class="f f8"
-          src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_8.png"
+          src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/1_flower_8.png"
         />
         <div class="f f6">
           <img
-            src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_13.png"
+            src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/1_flower_13.png"
           />
         </div>
         <img
           class="f f1"
-          src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_2.png"
+          src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/1_flower_2.png"
         />
         <img
           class="f f2 hue"
-          src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_7.png"
+          src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/1_flower_7.png"
         />
         <img
           class="f f5 hue"
-          src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_7.png"
+          src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/1_flower_7.png"
         />
         <div class="f f10">
           <img
-            src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_8.png"
+            src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/1_flower_8.png"
           />
         </div>
         <img
           class="f flower"
-          src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_14.png"
+          src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/1_flower_14.png"
         />
         <img
           class="f f3"
-          src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_5.png"
+          src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/1_flower_5.png"
         />
         <img
           class="f f4"
-          src="https://res-global.1315cdn.com:11443/statics/live/common/gift/1_flower_9.png"
+          src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/1_flower_9.png"
         />
       </div>
     </div>

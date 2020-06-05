@@ -2,7 +2,7 @@
   <div class="absolute wrapper">
     <div class="relative">
       <img
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/6_diamonds_0.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/6_diamonds_0.png"
       />
       <Sparkle class="sparkle s1" />
       <Sparkle class="sparkle s2" />

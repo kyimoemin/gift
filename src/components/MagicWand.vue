@@ -2,7 +2,7 @@
   <div class="animation-wrapper flex-center ">
     <img
       class="magic-wand"
-      src="https://res-global.1315cdn.com:11443/statics/live/common/gift/2_magic_0.png"
+      src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/2_magic_0.png"
     />
     <div class="absolute">
       <div class="relative">

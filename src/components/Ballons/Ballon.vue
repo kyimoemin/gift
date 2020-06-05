@@ -2,7 +2,7 @@
   <img
     ref="ballon"
     :src="
-      `https://res-global.1315cdn.com:11443/statics/ballon/${this.photoNumber}.png`
+      `https://res-global.pfkml36.cn:11443/statics/ballon/${this.photoNumber}.png`
     "
     class="ballon"
     :style="
@@ -40,7 +40,7 @@ export default {
       return getRandom(60, 90);
     },
     delay() {
-      return getRandom(0, 4000);
+      return getRandom(0, 4000, 300);
     },
   },
   mounted() {

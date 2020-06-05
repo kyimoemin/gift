@@ -3,7 +3,7 @@
     <div class="three-star">
       <div class="big-star s1">
         <img
-          src="https://res-global.1315cdn.com:11443/statics/live/common/gift/3_star_3.png"
+          src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/3_star_3.png"
         />
         <div class="sparkle sp1">
           <Sparkle />
@@ -17,7 +17,7 @@
       </div>
       <div class="big-star s2">
         <img
-          src="https://res-global.1315cdn.com:11443/statics/live/common/gift/3_star_3.png"
+          src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/3_star_3.png"
         />
         <div class="sparkle sp1">
           <Sparkle />
@@ -31,7 +31,7 @@
       </div>
       <div class="big-star s3">
         <img
-          src="https://res-global.1315cdn.com:11443/statics/live/common/gift/3_star_3.png"
+          src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/3_star_3.png"
         />
         <div class="sparkle sp1">
           <Sparkle />

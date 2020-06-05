@@ -2,7 +2,7 @@
   <div class="animation-wrapper flex-center">
     <div class="car">
       <img
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/10_Porsche_0.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/10_Porsche_0.png"
       />
     </div>
   </div>

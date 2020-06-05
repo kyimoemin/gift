@@ -2,61 +2,61 @@
   <div class="animation-wrapper flex-center">
     <img
       class="fly-kiss"
-      src="https://res-global.1315cdn.com:11443/statics/live/common/gift/5_lips_8.png"
+      src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/5_lips_8.png"
     />
     <div class="center-kiss">
       <img
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/5_lips_7.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/5_lips_7.png"
       />
     </div>
     <div class="kiss k1">
       <img
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/5_lips_7.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/5_lips_7.png"
       />
     </div>
     <div class="kiss k2">
       <img
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/5_lips_7.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/5_lips_7.png"
       />
     </div>
     <div class="kiss k3">
       <img
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/5_lips_7.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/5_lips_7.png"
       />
     </div>
     <div class="kiss k4">
       <img
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/5_lips_7.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/5_lips_7.png"
       />
     </div>
     <div class="kiss k5">
       <img
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/5_lips_7.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/5_lips_7.png"
       />
     </div>
     <div class="kiss k6">
       <img
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/5_lips_7.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/5_lips_7.png"
       />
     </div>
     <div class="kiss k7">
       <img
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/5_lips_7.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/5_lips_7.png"
       />
     </div>
     <div class="kiss k8">
       <img
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/5_lips_7.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/5_lips_7.png"
       />
     </div>
     <div class="kiss k9">
       <img
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/5_lips_7.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/5_lips_7.png"
       />
     </div>
     <div class="kiss k10">
       <img
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/5_lips_7.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/5_lips_7.png"
       />
     </div>
   </div>

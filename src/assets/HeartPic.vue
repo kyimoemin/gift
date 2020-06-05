@@ -2,7 +2,7 @@
   <div class="absolute">
     <div class="heart">
       <img
-        src="https://res-global.1315cdn.com:11443/statics/live/common/gift/4_heart_0.png"
+        src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/4_heart_0.png"
       />
       <Sparkle v-if="spark" class="left" />
       <Sparkle v-if="spark" class="right" />
