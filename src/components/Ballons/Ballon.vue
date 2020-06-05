@@ -50,7 +50,6 @@ export default {
   methods: {
     fly() {
       const { ballon } = this.$refs;
-      console.log(this.topPosition);
       ballon.style.opacity = 0;
       ballon.style.transform = `translate(${this.x}vw,-${
         this.y
