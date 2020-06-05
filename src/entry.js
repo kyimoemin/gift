@@ -2,7 +2,7 @@ import GiftAnimation from "./App.vue";
 function install(Vue) {
   if (install.installed) return;
   install.installed = true;
-  Vue.component("Gift", GiftAnimation);
+  Vue.component("GiftAnimation", GiftAnimation);
 }
 
 const plugin = {
