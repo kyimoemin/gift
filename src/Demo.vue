@@ -12,8 +12,13 @@ export default {
   },
   methods: {
     showAnimation() {
-      this.$root.$emit("show-animation");
+      this.$root.$emit("show-animation", "ballon");
     },
   },
 };
 </script>
+<style>
+#app {
+  height: 100vh;
+}
+</style>

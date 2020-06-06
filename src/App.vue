@@ -40,27 +40,27 @@ export default {
     MagicWand,
     Ballons,
   },
-  props: {
-    name: {
-      type: String,
-      required: true,
-    },
-  },
   data() {
     return {
       show: false,
+      name: "",
     };
   },
   mounted() {
-    this.validateName();
     this.$root.$on("show-animation", this.showAnimmation);
   },
+  destroyed() {
+    this.$root.$off("show-animation", this.showAnimmation);
+  },
   methods: {
-    showAnimmation() {
+    showAnimmation(name) {
       if (this.show) return;
+      this.name = name;
+      this.validateName();
       this.show = true;
       setTimeout(() => {
         this.show = false;
+        this.$root.$emit("animation-stopped");
       }, DURATIONS[this.name]);
     },
     validateName() {
@@ -93,14 +93,11 @@ body {
 .absolute {
   position: absolute;
 }
-svg {
+.gift-animation svg {
   position: absolute;
 }
 
-.b-1-w {
-  border: 1px solid white;
-}
-.animation-wrapper {
+.gift-animation .animation-wrapper {
   position: absolute;
   top: 0;
   left: 0;
