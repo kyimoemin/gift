@@ -1,5 +1,5 @@
 <template>
-  <div class="gift-animation">
+  <div v-if="show" class="gift-animation">
     <Hearts v-if="name === 'heart' && show" />
     <Candy v-if="name === 'candy' && show" />
     <Diamond v-if="name === 'diamond' && show" />

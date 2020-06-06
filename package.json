@@ -1,6 +1,6 @@
 {
   "name": "gift-animation",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "main": "./dist/gift-animation.common.js",
   "homepage": "https://github.com/Kyi-Moe-Min/gift",
   "author": {
