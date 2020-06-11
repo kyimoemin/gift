@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
 .animation-wrapper {
-  animation-name: none;
+  animation-name: none !important;
 }
 .h1 {
   top: 13vh;

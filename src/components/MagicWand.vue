@@ -220,7 +220,7 @@ export default {
   animation-direction: alternate;
 }
 .animation-wrapper {
-  animation-name: none;
+  animation-name: none !important;
 }
 .relative {
   /* border: 1px solid red; */
