@@ -65,6 +65,7 @@ export default {
     },
     validateName() {
       for (const giftName in DURATIONS) if (giftName === this.name) return;
+      this.$root.$emit("animation-stopped");
       throw new Error(
         `Props 'name' of GiftComponent must be one of '${Object.keys(
           DURATIONS
