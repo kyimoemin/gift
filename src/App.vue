@@ -2,14 +2,14 @@
   <div v-if="show" class="gift-animation">
     <Hearts v-if="name === 'heart' && show" />
     <Candy v-if="name === 'candy' && show" />
-    <Diamond v-if="name === 'diamond' && show" />
-    <Beach v-if="name === 'beach' && show" />
-    <Kiss v-if="name === 'kiss' && show" />
+    <Diamond v-if="name === 'diamonds' && show" />
+    <Beach v-if="name === 'bikini' && show" />
+    <Kiss v-if="name === 'lips' && show" />
     <Flower v-if="name === 'flower' && show" />
-    <Car v-if="name === 'car' && show" />
+    <Car v-if="name === 'porsche' && show" />
     <Stars v-if="name === 'star' && show" />
-    <MagicWand v-if="name === 'magicwand' && show" />
-    <Ballons v-if="name === 'ballon' && show" />
+    <MagicWand v-if="name === 'magic' && show" />
+    <Ballons v-if="name === 'balloon' && show" />
   </div>
 </template>
 

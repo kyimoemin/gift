@@ -51,7 +51,7 @@ export default {
 </script>
 ```
 
-| Event Name          | Payload                                                                                      | Description                           |
-| ------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------- |
-| `show-animation`    | `ballon`, `beach`, `candy`, `car`, `diamond`, `flower`, `heart`, `kiss`, `magicwand`, `star` | animation names that you want to show |
-| `animation-stopped` | -                                                                                            | triggered after animation is finished |
+| Event Name          | Payload                                                                                         | Description                           |
+| ------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------- |
+| `show-animation`    | `balloon`, `bikini`, `candy`, `porsche`, `diamonds`, `flower`, `heart`, `lips`, `magic`, `star` | animation names that you want to show |
+| `animation-stopped` | -                                                                                               | triggered after animation is finished |
