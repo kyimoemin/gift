@@ -12,7 +12,7 @@ export default {
   },
   methods: {
     showAnimation() {
-      this.$root.$emit("show-animation", "ballon");
+      this.$root.$emit("show-animation", "ramadan");
     },
   },
 };

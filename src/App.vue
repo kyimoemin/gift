@@ -10,6 +10,7 @@
     <Stars v-if="name === 'star' && show" />
     <MagicWand v-if="name === 'magic' && show" />
     <Ballons v-if="name === 'balloon' && show" />
+    <Ramadan v-if="name === 'ramadan' && show" />
   </div>
 </template>
 
@@ -24,6 +25,7 @@ import Hearts from "./components/Hearts";
 import Kiss from "./components/Kiss";
 import MagicWand from "./components/MagicWand";
 import Stars from "./components/Stars";
+import Ramadan from "./components/Ramadan";
 import { DURATIONS } from "./constants";
 
 export default {
@@ -39,6 +41,7 @@ export default {
     Stars,
     MagicWand,
     Ballons,
+    Ramadan,
   },
   data() {
     return {

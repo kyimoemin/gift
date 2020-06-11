@@ -9,5 +9,5 @@ export const DURATIONS = {
   lips: 3000,
   magic: 2700,
   star: 4400,
-  // ramadan:unknown
+  ramadan: 3000,
 };
