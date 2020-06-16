@@ -41,12 +41,12 @@ export default {
     Stars,
     MagicWand,
     Ballons,
-    Ramadan,
+    Ramadan
   },
   data() {
     return {
       show: false,
-      name: "",
+      name: ""
     };
   },
   mounted() {
@@ -74,8 +74,8 @@ export default {
           DURATIONS
         ).join("','")}'. But you are using '${this.name}'.`
       );
-    },
-  },
+    }
+  }
 };
 </script>
 

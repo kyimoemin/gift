@@ -68,13 +68,13 @@
 <style scoped>
 /* duration is 4s */
 .animation-wrapper {
-  background-image: radial-gradient(
+  /* background-image: radial-gradient(
     circle,
     #fff 5%,
     #dff1fb 15%,
     #4fb8f3 50%,
     transparent
-  );
+  ); */
   /* animation-name: none; */
   animation-name: fade-in;
   animation-duration: 4s;

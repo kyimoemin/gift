@@ -20,18 +20,21 @@
 }
 .moon {
   width: 50vmin;
+  margin: 15px;
+  max-width: 250px;
   animation-name: slide-up;
 }
 .ramadan {
   width: 60vmin;
+  max-width: 300px;
   align-self: center;
+  bottom: 20px;
   animation-name: slide-down;
 }
 
 .moon,
 .ramadan {
-  margin: 15px;
-
+  position: absolute;
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }

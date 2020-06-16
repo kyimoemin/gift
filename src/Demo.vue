@@ -8,13 +8,13 @@
 import App from "./App.vue";
 export default {
   components: {
-    App,
+    App
   },
   methods: {
     showAnimation() {
-      this.$root.$emit("show-animation", "ramadan");
-    },
-  },
+      this.$root.$emit("show-animation", "bikini");
+    }
+  }
 };
 </script>
 <style>
