@@ -41,7 +41,7 @@ export default {
       return getRandom(0, 80) * (this.leftPosition < 40 ? 1 : -1);
     },
     y() {
-      return getRandom(60, 90);
+      return getRandom(60, 100);
     }
   },
   mounted() {
@@ -50,9 +50,12 @@ export default {
   methods: {
     fly() {
       const { ballon } = this.$refs;
+      if (!ballon) return;
+      let x = ballon.parentElement.clientWidth * (this.x / 100);
+      let y = ballon.parentElement.clientHeight * (this.y / 100);
       ballon.style.opacity = 0;
-      ballon.style.transform = `translate(${this.x}%,-${this.y}%) rotate(${this
-        .x / 3}deg)`;
+      ballon.style.transform = `translate(${x}px,-${y}px) rotate(${this.x /
+        3}deg)`;
     }
   }
 };
