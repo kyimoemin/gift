@@ -217,10 +217,14 @@ export default {
   animation-duration: 2.2s;
 }
 .three-star {
+  width: 100%;
   position: absolute;
   bottom: 25%;
   animation-name: three-star;
   animation-duration: 4s;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 .big-star {
   display: inline-block;
@@ -232,9 +236,11 @@ export default {
 .s1,
 .s3 {
   width: 20%;
+  max-width: 200px;
 }
 .s2 {
   width: 35%;
+  max-width: 350px;
 }
 
 .s1 .sp1 {
@@ -338,7 +344,7 @@ export default {
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 9px 7px #ff4969;
-  transform: translateY(-25%);
+  transform: translateY(-25vh);
   animation-name: star-group;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -856,7 +862,7 @@ export default {
 }
 @keyframes star-group {
   0% {
-    transform: translateY(-25%);
+    transform: translateY(-25vh);
   }
   25% {
     transform: translateY(5px);

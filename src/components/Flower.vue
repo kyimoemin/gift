@@ -67,7 +67,6 @@
     </div>-->
   </div>
 </template>
-
 <style scoped>
 .animation-wrapper {
   /* animation-name: none; */
@@ -78,10 +77,8 @@ img {
 }
 .flower-wrapper {
   position: absolute;
-  width: 80vmin;
-  height: 80vmin;
-  max-width: 300px;
-  max-height: 300px;
+  width: 400px;
+  height: 400px;
   margin-top: 10vh;
 }
 .flower-wrapper div.relative.flex-center {
@@ -304,5 +301,12 @@ img {
 }
 .white-flowers img {
   height: 100px;
+}
+
+@media only screen and (max-width: 400px) {
+  .flower-wrapper {
+    height: 250px;
+    width: 250px;
+  }
 }
 </style>

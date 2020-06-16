@@ -14,7 +14,7 @@ export default {
   },
   methods: {
     showAnimation() {
-      this.$root.$emit("show-animation", "balloon");
+      this.$root.$emit("show-animation", "star");
     }
   }
 };
@@ -25,6 +25,6 @@ export default {
 }
 .relative {
   position: relative;
-  height: 50%;
+  height: 100%;
 }
 </style>
