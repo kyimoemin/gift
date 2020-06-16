@@ -11,7 +11,7 @@
 <style scoped>
 /* duration is 2s */
 .car {
-  transform: translate(60vw, -50vh) scale(0.2) scaleX(-1);
+  transform: translate(60%, -50%) scale(0.2) scaleX(-1);
   width: 160px;
   position: absolute;
   display: inline-flex;
@@ -46,34 +46,34 @@
 
 @keyframes drive {
   0% {
-    transform: translate(60vw, -50vh) scale(0.2) scaleX(-1);
+    transform: translate(60%, -50%) scale(0.2) scaleX(-1);
   }
   50% {
-    transform: translate(-60vw, 0vh) scale(1) scaleX(-1);
+    transform: translate(-60%, 0%) scale(1) scaleX(-1);
   }
   51% {
-    transform: translate(-60vw, 0vh) scale(1);
+    transform: translate(-60%, 0%) scale(1);
   }
   100% {
-    transform: translate(30vw, 30vh) scale(1.4);
+    transform: translate(30%, 30%) scale(1.4);
   }
 }
 @media only screen and (min-width: 400px) {
   .car {
-    transform: translate(200px, -50vh) scale(0.2) scaleX(-1);
+    transform: translate(200px, -50%) scale(0.2) scaleX(-1);
   }
   @keyframes drive {
     0% {
-      transform: translate(200px, -50vh) scale(0.2) scaleX(-1);
+      transform: translate(200px, -50%) scale(0.2) scaleX(-1);
     }
     50% {
-      transform: translate(-200px, 0vh) scale(1) scaleX(-1);
+      transform: translate(-200px, 0%) scale(1) scaleX(-1);
     }
     51% {
-      transform: translate(-200px, 0vh) scale(1);
+      transform: translate(-200px, 0%) scale(1);
     }
     100% {
-      transform: translate(100px, 30vh) scale(1.4);
+      transform: translate(100px, 30%) scale(1.4);
     }
   }
 }

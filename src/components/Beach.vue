@@ -87,13 +87,13 @@
 }
 .wrapper {
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   max-width: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-top: 20vh; */
+  /* margin-top: 20%; */
 }
 .cloud {
   width: 100%;

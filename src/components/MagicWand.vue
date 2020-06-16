@@ -1,5 +1,5 @@
 <template>
-  <div class="animation-wrapper flex-center ">
+  <div class="animation-wrapper flex-center">
     <img
       class="magic-wand"
       src="https://res-global.pfkml36.cn:11443/statics/live/common/gift/2_magic_0.png"
@@ -26,34 +26,34 @@
           <Star :fill="color" :color="color" />
         </div>
         <div ref="s7" class="star s7">
-          <SquareStar :fill="color" :color="color" class=" square" />
+          <SquareStar :fill="color" :color="color" class="square" />
         </div>
         <div ref="s8" class="star s8">
-          <SquareStar :fill="color" :color="color" class=" square" />
+          <SquareStar :fill="color" :color="color" class="square" />
         </div>
         <div ref="s9" class="star s9">
-          <SquareStar :fill="color" :color="color" class=" square" />
+          <SquareStar :fill="color" :color="color" class="square" />
         </div>
         <div ref="s10" class="star s10">
-          <SquareStar :fill="color" :color="color" class=" square" />
+          <SquareStar :fill="color" :color="color" class="square" />
         </div>
         <div ref="s11" class="star s11">
-          <SquareStar :fill="color" :color="color" class=" square" />
+          <SquareStar :fill="color" :color="color" class="square" />
         </div>
         <div ref="s12" class="star s12">
-          <SquareStar :fill="color" :color="color" class=" square" />
+          <SquareStar :fill="color" :color="color" class="square" />
         </div>
         <div ref="s13" class="star s13">
-          <SquareStar :fill="color" :color="color" class=" square" />
+          <SquareStar :fill="color" :color="color" class="square" />
         </div>
         <div ref="s14" class="star s14">
-          <SquareStar :fill="color" :color="color" class=" square" />
+          <SquareStar :fill="color" :color="color" class="square" />
         </div>
         <div ref="s15" class="star s15">
-          <SquareStar :fill="color" :color="color" class=" square" />
+          <SquareStar :fill="color" :color="color" class="square" />
         </div>
         <div ref="s16" class="star s16">
-          <SquareStar :fill="color" :color="color" class=" square" />
+          <SquareStar :fill="color" :color="color" class="square" />
         </div>
         <div ref="ss1" class="star s1">
           <Star :fill="color" :color="color" />
@@ -74,34 +74,34 @@
           <Star :fill="color" :color="color" />
         </div>
         <div ref="ss7" class="star s7">
-          <SquareStar :fill="color" :color="color" class=" square" />
+          <SquareStar :fill="color" :color="color" class="square" />
         </div>
         <div ref="ss8" class="star s8">
-          <SquareStar :fill="color" :color="color" class=" square" />
+          <SquareStar :fill="color" :color="color" class="square" />
         </div>
         <div ref="ss9" class="star s9">
-          <SquareStar :fill="color" :color="color" class=" square" />
+          <SquareStar :fill="color" :color="color" class="square" />
         </div>
         <div ref="ss10" class="star s10">
-          <SquareStar :fill="color" :color="color" class=" square" />
+          <SquareStar :fill="color" :color="color" class="square" />
         </div>
         <div ref="ss11" class="star s11">
-          <SquareStar :fill="color" :color="color" class=" square" />
+          <SquareStar :fill="color" :color="color" class="square" />
         </div>
         <div ref="ss12" class="star s12">
-          <SquareStar :fill="color" :color="color" class=" square" />
+          <SquareStar :fill="color" :color="color" class="square" />
         </div>
         <div ref="ss13" class="star s13">
-          <SquareStar :fill="color" :color="color" class=" square" />
+          <SquareStar :fill="color" :color="color" class="square" />
         </div>
         <div ref="ss14" class="star s14">
-          <SquareStar :fill="color" :color="color" class=" square" />
+          <SquareStar :fill="color" :color="color" class="square" />
         </div>
         <div ref="ss15" class="star s15">
-          <SquareStar :fill="color" :color="color" class=" square" />
+          <SquareStar :fill="color" :color="color" class="square" />
         </div>
         <div ref="ss16" class="star s16">
-          <SquareStar :fill="color" :color="color" class=" square" />
+          <SquareStar :fill="color" :color="color" class="square" />
         </div>
       </div>
     </div>
@@ -118,11 +118,11 @@ export default {
   name: "MagicWand",
   components: {
     Star,
-    SquareStar,
+    SquareStar
   },
   data() {
     return {
-      color: "#fefded",
+      color: "#fefded"
     };
   },
   mounted() {
@@ -162,7 +162,7 @@ export default {
         ss13,
         ss14,
         ss15,
-        ss16,
+        ss16
       } = this.$refs;
       setTimeout(() => moveAway(s1, 1, 50, true, true), 800);
       setTimeout(() => moveAway(s2, 1, 1.15, true, true), 900);
@@ -196,8 +196,8 @@ export default {
       setTimeout(() => moveAway(ss14, 1, 1.15, true, true), 1100 + 500);
       setTimeout(() => moveAway(ss15, 1, 28), 1100 + 500);
       setTimeout(() => moveAway(ss16, 1, 28.5), 1100 + 500);
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -211,7 +211,7 @@ export default {
 }
 .magic-wand {
   position: absolute;
-  transform: translateX(100vw) rotate(-45deg);
+  transform: translateX(100%) rotate(-45deg);
   width: 200px;
   animation-name: cast;
   animation-duration: 1s;
@@ -307,19 +307,19 @@ export default {
 
 @keyframes cast {
   0% {
-    transform: translateX(100vw) rotate(-45deg);
+    transform: translateX(100%) rotate(-45deg);
   }
   100% {
-    transform: translateX(20vw) rotate(-100deg);
+    transform: translateX(20%) rotate(-100deg);
   }
 }
 @media only screen and (min-width: 400px) {
   @keyframes cast {
     0% {
-      transform: translateX(100vw) rotate(-45deg);
+      transform: translateX(100%) rotate(-45deg);
     }
     100% {
-      transform: translateX(10vw) rotate(-100deg);
+      transform: translateX(10%) rotate(-100deg);
     }
   }
 }

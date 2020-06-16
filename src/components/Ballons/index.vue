@@ -28,8 +28,8 @@ import Ballon from "./Ballon";
 export default {
   name: "Ballons",
   components: {
-    Ballon,
-  },
+    Ballon
+  }
 };
 </script>
 <style scoped>

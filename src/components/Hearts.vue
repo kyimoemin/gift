@@ -30,8 +30,8 @@ import HeartPic from "../assets/HeartPic";
 export default {
   name: "Hearts",
   components: {
-    HeartPic,
-  },
+    HeartPic
+  }
 };
 </script>
 
@@ -40,89 +40,89 @@ export default {
   animation-name: none !important;
 }
 .h1 {
-  top: 13vh;
-  right: 10vw;
+  top: 13%;
+  right: 10%;
 }
 
 .h2 {
-  top: 24vh;
-  left: 5vw;
+  top: 24%;
+  left: 5%;
   animation-delay: 0.2s;
 }
 .h3 {
-  top: 42vh;
-  right: 12vw;
+  top: 42%;
+  right: 12%;
   animation-delay: 0.6s;
 }
 .h4 {
-  bottom: 12vh;
-  left: 20vw;
+  bottom: 12%;
+  left: 20%;
   animation-delay: 0.4s;
 }
 .h5 {
-  top: 31vh;
-  left: 42vw;
+  top: 31%;
+  left: 42%;
   animation-delay: 0.8s;
 }
 .h6 {
-  bottom: -4vh;
-  right: 34vw;
+  bottom: -4%;
+  right: 34%;
   animation-delay: 1s;
 }
 .h7 {
-  bottom: -11vh;
-  left: 11vw;
+  bottom: -11%;
+  left: 11%;
   animation-delay: 1.2s;
 }
 .h8 {
-  bottom: -6vh;
-  right: 9vw;
+  bottom: -6%;
+  right: 9%;
   animation-delay: 1.6s;
 }
 
 .h9 {
-  top: 28vh;
-  right: 14vw;
+  top: 28%;
+  right: 14%;
   animation-delay: 2s;
 }
 .h10 {
-  top: 56vh;
-  left: -2vw;
+  top: 56%;
+  left: -2%;
   animation-delay: 2.2s;
 }
 .h11 {
-  bottom: -17vh;
-  left: 18vw;
+  bottom: -17%;
+  left: 18%;
   animation-delay: 2.4s;
 }
 .h12 {
-  bottom: -5vh;
-  right: 27vw;
+  bottom: -5%;
+  right: 27%;
   animation-delay: 2.6s;
 }
 .h13 {
-  top: 5vh;
-  right: 20vw;
+  top: 5%;
+  right: 20%;
   animation-delay: 2.8s;
 }
 .h14 {
-  top: 16vh;
-  left: 4vw;
+  top: 16%;
+  left: 4%;
   animation-delay: 3s;
 }
 .h15 {
-  top: 40vh;
-  left: 29vw;
+  top: 40%;
+  left: 29%;
   animation-delay: 3.2s;
 }
 .h16 {
-  bottom: 19vh;
-  right: -5vw;
+  bottom: 19%;
+  right: -5%;
   animation-delay: 4s;
 }
 .h17 {
-  bottom: 10vh;
-  left: 7vw;
+  bottom: 10%;
+  left: 7%;
   animation-delay: 3.8s;
 }
 </style>

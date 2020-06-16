@@ -140,7 +140,7 @@
         <Star fill="white" color="white" />
         <div class="dot s d1" />
         <div class="dot s d2" />
-        <div class="dot  d3" />
+        <div class="dot d3" />
       </div>
     </div>
 
@@ -205,8 +205,8 @@ import Star from "../assets/Star";
 export default {
   components: {
     Sparkle,
-    Star,
-  },
+    Star
+  }
 };
 </script>
 
@@ -218,7 +218,7 @@ export default {
 }
 .three-star {
   position: absolute;
-  bottom: 25vh;
+  bottom: 25%;
   animation-name: three-star;
   animation-duration: 4s;
 }
@@ -231,10 +231,10 @@ export default {
 }
 .s1,
 .s3 {
-  width: 20vmin;
+  width: 20%;
 }
 .s2 {
-  width: 35vmin;
+  width: 35%;
 }
 
 .s1 .sp1 {
@@ -338,7 +338,7 @@ export default {
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 9px 7px #ff4969;
-  transform: translateY(-25vh);
+  transform: translateY(-25%);
   animation-name: star-group;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -348,7 +348,7 @@ export default {
   content: "";
   display: inline-block;
   position: absolute;
-  height: 50vh;
+  height: 50%;
   width: 1px;
   background: linear-gradient(to bottom, #ff4969, #ff496944);
   bottom: 0;
@@ -359,87 +359,87 @@ export default {
 .sg1 {
   left: 13px;
   transform: scale(1.5);
-  top: 5vh;
+  top: 5%;
   animation-delay: 0.3s;
 }
 
 .sg2 {
-  top: 13vh;
-  left: 8vw;
+  top: 13%;
+  left: 8%;
   transform: scale(1.4);
   animation-delay: 0.6s;
 }
 
 .sg3 {
-  left: 17vw;
-  top: 19vh;
+  left: 17%;
+  top: 19%;
   transform: scale(1.8);
 }
 
 .sg4 {
-  left: 28vw;
-  top: 11vh;
+  left: 28%;
+  top: 11%;
   animation-delay: 0.35s;
 }
 
 .sg5 {
-  top: 4vh;
-  left: 32vw;
+  top: 4%;
+  left: 32%;
   animation-delay: 0.65s;
 }
 
 .sg6 {
-  top: 25vh;
-  left: 36vw;
+  top: 25%;
+  left: 36%;
   animation-delay: 0.05s;
 }
 .sg7 {
-  top: 8vh;
-  left: 44vw;
+  top: 8%;
+  left: 44%;
   transform: scale(2);
   animation-delay: 0.4s;
 }
 
 .sg8 {
-  top: 20vh;
-  right: 48vw;
+  top: 20%;
+  right: 48%;
   transform: scale(1.8);
   animation-delay: 0.1s;
 }
 
 .sg9 {
-  top: 11vh;
-  right: 39vw;
+  top: 11%;
+  right: 39%;
   animation-delay: 0.45s;
 }
 
 .sg10 {
-  top: 21vh;
-  right: 33vw;
+  top: 21%;
+  right: 33%;
   animation-delay: 0.15s;
 }
 
 .sg11 {
-  top: 5vh;
-  right: 30vw;
+  top: 5%;
+  right: 30%;
   transform: scale(1.3);
   animation-delay: 0.2s;
 }
 .sg12 {
-  top: 6vh;
-  right: 20vw;
+  top: 6%;
+  right: 20%;
   transform: scale(2);
   animation-delay: 0.5s;
 }
 .sg13 {
-  top: 15vh;
-  right: 13vw;
+  top: 15%;
+  right: 13%;
   transform: scale(1.5);
   animation-delay: 0.55s;
 }
 .sg14 {
-  right: 2vw;
-  top: 9vh;
+  right: 2%;
+  top: 9%;
   animation-delay: 0.25s;
 }
 
@@ -828,7 +828,7 @@ export default {
 }
 @keyframes three-star {
   0% {
-    transform: translateY(25vh);
+    transform: translateY(25%);
   }
   25% {
     transform: translateY(-15px);
@@ -856,7 +856,7 @@ export default {
 }
 @keyframes star-group {
   0% {
-    transform: translateY(-25vh);
+    transform: translateY(-25%);
   }
   25% {
     transform: translateY(5px);

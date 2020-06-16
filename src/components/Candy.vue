@@ -1,6 +1,6 @@
 <template>
   <div class="main-view">
-    <div ref="wrapper" class="relative  ">
+    <div ref="wrapper" class="relative">
       <!-- first transform -->
       <SquareStar
         ref="firstSqStar1"
@@ -110,7 +110,7 @@ export default {
     SquareStar,
     Triangle,
     Heart,
-    CircleComponent,
+    CircleComponent
   },
   mounted() {
     setTimeout(this.firstTransform, 0);
@@ -126,7 +126,7 @@ export default {
         firstStar1,
         firstTriangle1,
         firstSqStar2,
-        firstCircle1,
+        firstCircle1
       } = this.$refs;
       moveAway(firstSqStar1.$el, 0.7, 4);
       moveAway(firstSquare1.$el, 0.7, 6);
@@ -151,15 +151,15 @@ export default {
       const { fourthSquare, fourthTriangle } = this.$refs;
       moveAway(fourthSquare.$el, 1.2, 2.5);
       moveAway(fourthTriangle.$el, 1.2, 2.5);
-    },
-  },
+    }
+  }
 };
 </script>
 
 <style scope>
 .main-view {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -34,14 +34,14 @@ export default {
     style() {
       return `
         filter: blur(${this.blur}px);
-        left: ${this.x}vw;
-        top: ${this.y}vh;
+        left: ${this.x}%;
+        top: ${this.y}%;
         opacity:${this.opacity};
         height: ${this.size}px;
         width: ${this.size}px;
         box-shadow: 0px 0px ${this.size / 10}px ${this.size / 10}px #fce978;
       `;
-    },
+    }
   },
   mounted() {
     // this.$refs.partical.style.transitionDelay = `${this.delay}s`;
@@ -50,9 +50,9 @@ export default {
   methods: {
     move() {
       let el = this.$refs.partical;
-      el.style.transform = `translate(130vw,${this.dy}vh)`;
-    },
-  },
+      el.style.transform = `translate(130%,${this.dy}%)`;
+    }
+  }
 };
 </script>
 

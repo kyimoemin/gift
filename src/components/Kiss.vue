@@ -68,8 +68,8 @@
      3,2,4,5,1,
              10,9,8 */
 .k1 {
-  top: 1vh;
-  left: 1vw;
+  top: 1%;
+  left: 1%;
   width: 45px;
   animation-delay: 1.5s;
 }
@@ -77,8 +77,8 @@
   transform: rotate(45deg);
 }
 .k2 {
-  top: 4vh;
-  right: 10vw;
+  top: 4%;
+  right: 10%;
   width: 70px;
   animation-delay: 1.2s;
 }
@@ -86,8 +86,8 @@
   transform: rotate(23deg);
 }
 .k3 {
-  top: 16vh;
-  left: 18vw;
+  top: 16%;
+  left: 18%;
   width: 70px;
   animation-delay: 1.15s;
 }
@@ -95,8 +95,8 @@
   transform: rotate(-28deg);
 }
 .k4 {
-  top: 19vh;
-  right: -6vw;
+  top: 19%;
+  right: -6%;
   width: 80px;
   animation-delay: 1.3s;
 }
@@ -104,8 +104,8 @@
   transform: rotate(-37deg);
 }
 .k5 {
-  left: -3vw;
-  top: 30vh;
+  left: -3%;
+  top: 30%;
   width: 70px;
   animation-delay: 1.4s;
 }
@@ -113,8 +113,8 @@
   transform: rotate(26deg);
 }
 .k6 {
-  right: 11vw;
-  top: 51vh;
+  right: 11%;
+  top: 51%;
   width: 50px;
   animation-delay: 1.1s;
 }
@@ -122,8 +122,8 @@
   transform: rotate(45deg);
 }
 .k7 {
-  left: 32vw;
-  bottom: 23vh;
+  left: 32%;
+  bottom: 23%;
   width: 65px;
   animation-delay: 1s;
 }
@@ -131,8 +131,8 @@
   transform: rotate(-27deg);
 }
 .k8 {
-  right: -4vw;
-  bottom: 17vh;
+  right: -4%;
+  bottom: 17%;
   width: 65px;
   animation-delay: 1.7s;
 }
@@ -140,8 +140,8 @@
   transform: rotate(37deg);
 }
 .k9 {
-  left: 10vw;
-  bottom: 6vh;
+  left: 10%;
+  bottom: 6%;
   width: 70px;
   animation-delay: 1.6s;
 }
@@ -149,8 +149,8 @@
   transform: rotate(-108deg);
 }
 .k10 {
-  bottom: 0vh;
-  right: 32vw;
+  bottom: 0%;
+  right: 32%;
   width: 50px;
   animation-delay: 1.5s;
 }

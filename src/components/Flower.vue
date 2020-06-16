@@ -64,7 +64,7 @@
     </div>
     <!-- <div class="white-flowers">
       <img src="../assets/flower.svg" />
-    </div> -->
+    </div>-->
   </div>
 </template>
 
@@ -80,6 +80,8 @@ img {
   position: absolute;
   width: 80vmin;
   height: 80vmin;
+  max-width: 300px;
+  max-height: 300px;
   margin-top: 10vh;
 }
 .flower-wrapper div.relative.flex-center {

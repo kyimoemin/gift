@@ -81,8 +81,8 @@ export default {
 
 <style scope>
 .gift-animation {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
   position: absolute;
   /* background: url(./assets/bg.png); */
@@ -105,8 +105,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
 
   animation-name: fade-in;

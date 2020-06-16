@@ -1,6 +1,8 @@
 <template>
   <div id="app" @click="showAnimation">
-    <App id="#app" />
+    <div class="relative">
+      <App id="#app" />
+    </div>
   </div>
 </template>
 
@@ -12,7 +14,7 @@ export default {
   },
   methods: {
     showAnimation() {
-      this.$root.$emit("show-animation", "bikini");
+      this.$root.$emit("show-animation", "balloon");
     }
   }
 };
@@ -20,5 +22,9 @@ export default {
 <style>
 #app {
   height: 100vh;
+}
+.relative {
+  position: relative;
+  height: 50%;
 }
 </style>

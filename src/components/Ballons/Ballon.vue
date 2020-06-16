@@ -8,7 +8,7 @@
     :style="
       `height:${this.height}px;
      z-index:${this.height};
-     left:${this.leftPosition}vw;
+     left:${this.leftPosition}%;
      top:${this.topPosition}%;
      `
     "
@@ -42,7 +42,7 @@ export default {
     },
     y() {
       return getRandom(60, 90);
-    },
+    }
   },
   mounted() {
     setTimeout(this.fly, (this.topPosition - 90) * 10);
@@ -51,11 +51,10 @@ export default {
     fly() {
       const { ballon } = this.$refs;
       ballon.style.opacity = 0;
-      ballon.style.transform = `translate(${this.x}vw,-${
-        this.y
-      }vh) rotate(${this.x / 3}deg)`;
-    },
-  },
+      ballon.style.transform = `translate(${this.x}%,-${this.y}%) rotate(${this
+        .x / 3}deg)`;
+    }
+  }
 };
 </script>
 

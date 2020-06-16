@@ -19,13 +19,14 @@
   justify-content: space-between;
 }
 .moon {
-  width: 50vmin;
+  width: 50%;
+
   margin: 15px;
   max-width: 250px;
   animation-name: slide-up;
 }
 .ramadan {
-  width: 60vmin;
+  width: 60%;
   max-width: 300px;
   align-self: center;
   bottom: 20px;
