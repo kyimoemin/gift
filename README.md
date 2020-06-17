@@ -21,7 +21,9 @@ npm i gift-animation
 ```vue
 <template>
   <div id="app" @click="show">
-    <GiftAnimation />
+    <div class="gift-wrapper">
+      <GiftAnimation />
+    </div>
   </div>
 </template>
 
@@ -49,6 +51,12 @@ export default {
   },
 };
 </script>
+<style scope>
+.gift-wrapper {
+  height: 50%;
+  position: absolute;
+}
+</style>
 ```
 
 | Event Name          | Payload                                                                                         | Description                           |
