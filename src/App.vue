@@ -41,12 +41,12 @@ export default {
     Stars,
     MagicWand,
     Ballons,
-    Ramadan
+    Ramadan,
   },
   data() {
     return {
       show: false,
-      name: ""
+      name: "",
     };
   },
   mounted() {
@@ -74,8 +74,8 @@ export default {
           DURATIONS
         ).join("','")}'. But you are using '${this.name}'.`
       );
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -91,10 +91,10 @@ export default {
 body {
   margin: 0 !important;
 }
-.relative {
+.gift-animation .relative {
   position: relative;
 }
-.absolute {
+.gift-animation .absolute {
   position: absolute;
 }
 .gift-animation svg {
@@ -117,17 +117,17 @@ body {
   animation-timing-function: cubic-bezier(0, 1.01, 0.11, 1.01);
 }
 
-.flex {
+.gift-animation .flex {
   display: flex;
 }
-.justify-center {
+.gift-animation .justify-center {
   justify-content: center;
 }
-.align-center {
+.gift-animation .align-center {
   align-items: center;
 }
 
-.flex-center {
+.gift-animation .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
